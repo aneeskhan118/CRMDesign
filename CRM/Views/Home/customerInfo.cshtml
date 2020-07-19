@@ -1,0 +1,243 @@
+﻿
+@{
+    ViewBag.Title = "customerInfo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="account-settings-container layout-top-spacing">
+
+    <div class="account-content">
+        <div class="scrollspy-example" data-spy="scroll" data-target="#account-settings-scroll" data-offset="-100">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 layout-spacing">
+                    <form id="general-info" class="section general-info">
+                        <div class="info">
+                            <h6 class="">General Information</h6>
+                            <div class="row">
+                                <div class="col-lg-11 mx-auto">
+                                    <div class="row">
+                                        <div class="col-md-11 mx-auto">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="userType">User Type</label>
+                                                        <select class="form-control" id="userType">
+                                                            <option>Select User Type</option>
+                                                            <option>Admin</option>
+                                                            <option>Client</option>
+                                                            <option>Users</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="userStatus">User Status</label>
+                                                        <select class="form-control" id="userStatus">
+                                                            <option>Select User Status</option>
+                                                            <option>Active</option>
+                                                            <option>Inactive</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="name">Name</label>
+                                                        <input type="text" class="form-control mb-4" id="name" placeholder="Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="phone">Mobile No.</label>
+                                                        <input type="tel" class="form-control mb-4" id="phone" placeholder="Mobile Number" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="email">Email ID</label>
+                                                        <input type="email" class="form-control mb-4" id="email" placeholder="Email ID" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="password">Password</label>
+                                                        <input type="password" class="form-control mb-4" id="password" placeholder="Password">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="dob">Date of Birth</label>
+                                                        <input type="date" class="form-control mb-4" id="dob" placeholder="DOB">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="endDate">Enter Access End Date</label>
+                                                        <input type="date" class="form-control mb-4" id="endDate" placeholder="Enter Access End Date">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-xl-12 col-lg-12 col-md-12 layout-spacing">
+                    <form id="contact" class="section contact">
+                        <div class="info">
+                            <h5 class="">Address</h5>
+                            <div class="row">
+                                <div class="col-md-11 mx-auto">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="country">Country</label>
+                                                <select class="form-control" id="country">
+                                                    <option>Select Country</option>
+                                                    <option>United States</option>
+                                                    <option>India</option>
+                                                    <option>Japan</option>
+                                                    <option>China</option>
+                                                    <option>Brazil</option>
+                                                    <option>Norway</option>
+                                                    <option>Canada</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="state">Address</label>
+                                                <select class="form-control" id="state">
+                                                    <option value="">Select State</option>
+                                                    <option value="1">Andaman and Nicobar Islands</option>
+                                                    <option value="2">Andhra Pradesh</option>
+                                                    <option value="3">Arunachal Pradesh</option>
+                                                    <option value="4">Assam</option>
+                                                    <option value="5">Bihar</option>
+                                                    <option value="6">Chandigarh</option>
+                                                    <option value="7">Chhattisgarh</option>
+                                                    <option value="8">Dadra and Nagar Haveli</option>
+                                                    <option value="9">Daman and Diu</option>
+                                                    <option value="10">Delhi</option>
+                                                    <option value="11">Goa</option>
+                                                    <option value="12">Gujarat</option>
+                                                    <option value="13">Haryana</option>
+                                                    <option value="14">Himachal Pradesh</option>
+                                                    <option value="15">Jammu and Kashmir</option>
+                                                    <option value="16">Jharkhand</option>
+                                                    <option value="17">Karnataka</option>
+                                                    <option value="18">Kenmore</option>
+                                                    <option value="19">Kerala</option>
+                                                    <option value="20">Lakshadweep</option>
+                                                    <option value="21">Madhya Pradesh</option>
+                                                    <option value="22">Maharashtra</option>
+                                                    <option value="23">Manipur</option>
+                                                    <option value="24">Meghalaya</option>
+                                                    <option value="25">Mizoram</option>
+                                                    <option value="26">Nagaland</option>
+                                                    <option value="27">Narora</option>
+                                                    <option value="28">Natwar</option>
+                                                    <option value="29">Odisha</option>
+                                                    <option value="30">Paschim Medinipur</option>
+                                                    <option value="31">Pondicherry</option>
+                                                    <option value="32">Punjab</option>
+                                                    <option value="33">Rajasthan</option>
+                                                    <option value="34">Sikkim</option>
+                                                    <option value="35">Tamil Nadu</option>
+                                                    <option value="36">Telangana</option>
+                                                    <option value="37">Tripura</option>
+                                                    <option value="38">Uttar Pradesh</option>
+                                                    <option value="39">Uttarakhand</option>
+                                                    <option value="40">Vaishali</option>
+                                                    <option value="41">West Bengal</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="city">City</label>
+                                                <input type="text" class="form-control mb-4" id="city" placeholder="City">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="pin">Pin Code</label>
+                                                <input type="text" class="form-control mb-4" id="pin" placeholder="Pin Code">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-xl-12 col-lg-12 col-md-12 layout-spacing">
+                    <form id="contact" class="section contact">
+                        <div class="info">
+                            <h5 class="">Company/Shop Details</h5>
+                            <div class="row">
+                                <div class="col-md-11 mx-auto">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="companyType">Company Type</label>
+                                                <select class="form-control" id="companyType">
+                                                    <option>Select Company Type</option>
+                                                    <option>Distributor</option>
+                                                    <option>Retails</option>
+                                                    <option>Sales</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="orgName">Shop/Organisation name</label>
+                                                <input type="text" class="form-control mb-4" id="orgName" placeholder="Shop/Organisation name">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="designation">Designation</label>
+                                                <input type="text" class="form-control mb-4" id="designation" placeholder="Designation">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="gst">GST Number</label>
+                                                <input type="text" class="form-control mb-4" id="gst" placeholder="GST Number">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="pan">PAN Number</label>
+                                                <input type="text" class="form-control mb-4" id="pan" placeholder="PAN Number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="account-settings-footer position-relative w-100">
+
+        <div class="as-footer-container">
+
+            <button id="multiple-reset" class="btn btn-warning">Reset All</button>
+            <div class="blockui-growl-message">
+                <i class="flaticon-double-check"></i>&nbsp; Settings Saved Successfully
+            </div>
+            <button id="multiple-messages" class="btn btn-primary">Save Changes</button>
+
+        </div>
+
+    </div>
+</div>
+

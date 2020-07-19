@@ -1,0 +1,52 @@
+﻿.actionButton {
+    position: absolute;
+    top: 32px;
+    right: 280px;
+    z-index: 1;
+
+    @media (max-width: 767px) {
+        position: relative;
+        justify-content: center;
+        margin-bottom: 8px;
+        margin-left: 40px;
+        top: auto;
+        right: auto;
+    }
+
+    .addButton, .deleteButton {
+        padding: 9px;
+        background: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 15px;
+        box-shadow: 0px 2px 4px rgba(126, 142, 177, 0.12);
+        width: 43px;
+        height: 41px;
+        fill: rgba(27, 85, 226, 0.239216);
+    }
+
+    .addButton {
+        svg {
+            color: #1b55e2;
+        }
+
+        &:hover {
+            svg {
+                color: #515365;
+                fill: rgba(0, 23, 55, 0.08);
+            }
+        }
+    }
+
+    .deleteButton {
+        svg {
+            color: #e22f39;
+        }
+
+        &:hover {
+            svg {
+                color: #ec737b;
+            }
+        }
+    }
+}

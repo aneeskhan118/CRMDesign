@@ -1,0 +1,518 @@
+﻿
+@{
+    ViewBag.Title = "Customer";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-header">
+    <div class="page-title">
+        <h3>Customer List</h3>
+    </div>
+</div>
+
+<div class="row" id="cancel-row">
+
+    <div class="col-xl-12 col-lg-12 col-sm-12  layout-spacing">
+        <div class="br-6">
+            <div class="table-responsive mb-4 mt-4">
+                <div class="actionButton d-flex align-items-center">
+                    <a href="~/Home/customerInfo" class="addButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                    </a>
+                    <div class="deleteButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2  delete-multiple"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                    </div>
+                </div>
+                <table id="default-ordering" class="table table-hover" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </th>
+                            <th>Full Name</th>
+                            <th>Mobile</th>
+                            <th>Email ID</th>
+                            <th>User Type</th>
+                            <th>User Status</th>
+                            <th>Product in Cart</th>
+                            <th>Product Assign</th>
+                            <th>Cart Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-primary">Read</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-danger">Unread</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-primary">Read</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-danger">Unread</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-primary">Read</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-danger">Unread</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-primary">Read</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-danger">Unread</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-primary">Read</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-danger">Unread</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-primary">Read</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-danger">Unread</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-primary">Read</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-danger">Unread</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-primary">Read</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-danger">Unread</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-primary">Read</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-danger">Unread</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-primary">Read</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>Saurav Srivastava</td>
+                            <td>8602253045</td>
+                            <td>saurav.srivastava27@outlook.com</td>
+                            <td>Admin</td>
+                            <td>Active</td>
+                            <td>32</td>
+                            <td>Not Assigned</td>
+                            <td class="text-center"><span class="shadow-none badge badge-danger">Unread</span></td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section scripts {
+    <script src="~/Script/customer.js"></script>
+}

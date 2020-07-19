@@ -1,0 +1,108 @@
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\ApplicationInsights.config
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\csc.exe
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\System.Collections.Immutable.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\vbc.exe
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\VBCSCompiler.exe
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\roslyn\VBCSCompiler.exe.config
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\CRM.dll.config
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\CRM.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\CRM.pdb
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Antlr3.Runtime.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.Web.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.WindowsServer.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.ApplicationInsights.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.Web.Infrastructure.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Newtonsoft.Json.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\System.Web.Helpers.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\System.Web.Mvc.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\System.Web.Optimization.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\System.Web.Razor.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\System.Web.WebPages.Deployment.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\System.Web.WebPages.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\System.Web.WebPages.Razor.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\WebGrease.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.Web.xml
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.AI.WindowsServer.xml
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.ApplicationInsights.xml
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\System.Web.Helpers.xml
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\System.Web.Mvc.xml
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\System.Web.Optimization.xml
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\System.Web.Razor.xml
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\System.Web.WebPages.xml
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\System.Web.WebPages.Deployment.xml
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\System.Web.WebPages.Razor.xml
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Antlr3.Runtime.pdb
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\bin\Newtonsoft.Json.xml
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\obj\Debug\CRM.csprojResolveAssemblyReference.cache
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\obj\Debug\CRM.dll
+c:\users\anees.khan\documents\visual studio 2015\Projects\CRM\CRM\obj\Debug\CRM.pdb
+D:\Saurav\Project\Javed\CRM\CRM\bin\ApplicationInsights.config
+D:\Saurav\Project\Javed\CRM\CRM\bin\roslyn\csc.exe
+D:\Saurav\Project\Javed\CRM\CRM\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Saurav\Project\Javed\CRM\CRM\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Saurav\Project\Javed\CRM\CRM\bin\roslyn\System.Collections.Immutable.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\roslyn\System.Reflection.Metadata.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\roslyn\vbc.exe
+D:\Saurav\Project\Javed\CRM\CRM\bin\roslyn\VBCSCompiler.exe
+D:\Saurav\Project\Javed\CRM\CRM\bin\roslyn\VBCSCompiler.exe.config
+D:\Saurav\Project\Javed\CRM\CRM\bin\CRM.dll.config
+D:\Saurav\Project\Javed\CRM\CRM\bin\CRM.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\CRM.pdb
+D:\Saurav\Project\Javed\CRM\CRM\bin\Antlr3.Runtime.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.AI.DependencyCollector.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.AI.Web.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.AI.WindowsServer.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.ApplicationInsights.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.Web.Infrastructure.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\Newtonsoft.Json.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\System.Web.Helpers.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\System.Web.Mvc.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\System.Web.Optimization.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\System.Web.Razor.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\System.Web.WebPages.Deployment.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\System.Web.WebPages.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\System.Web.WebPages.Razor.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\WebGrease.dll
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.AI.DependencyCollector.xml
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.AI.Web.xml
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.AI.WindowsServer.xml
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.ApplicationInsights.xml
+D:\Saurav\Project\Javed\CRM\CRM\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Saurav\Project\Javed\CRM\CRM\bin\System.Web.Helpers.xml
+D:\Saurav\Project\Javed\CRM\CRM\bin\System.Web.Mvc.xml
+D:\Saurav\Project\Javed\CRM\CRM\bin\System.Web.Optimization.xml
+D:\Saurav\Project\Javed\CRM\CRM\bin\System.Web.Razor.xml
+D:\Saurav\Project\Javed\CRM\CRM\bin\System.Web.WebPages.xml
+D:\Saurav\Project\Javed\CRM\CRM\bin\System.Web.WebPages.Deployment.xml
+D:\Saurav\Project\Javed\CRM\CRM\bin\System.Web.WebPages.Razor.xml
+D:\Saurav\Project\Javed\CRM\CRM\bin\Antlr3.Runtime.pdb
+D:\Saurav\Project\Javed\CRM\CRM\bin\Newtonsoft.Json.xml
+D:\Saurav\Project\Javed\CRM\CRM\obj\Debug\CRM.csprojAssemblyReference.cache
+D:\Saurav\Project\Javed\CRM\CRM\obj\Debug\CRM.csproj.CoreCompileInputs.cache
+D:\Saurav\Project\Javed\CRM\CRM\obj\Debug\CRM.csproj.CopyComplete
+D:\Saurav\Project\Javed\CRM\CRM\obj\Debug\CRM.dll
+D:\Saurav\Project\Javed\CRM\CRM\obj\Debug\CRM.pdb
