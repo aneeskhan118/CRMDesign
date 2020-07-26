@@ -284,3 +284,24 @@ var App = function() {
     }
 
 }();
+
+
+$(document).ready(function () {
+    if (localStorage.getItem("theme")) {
+        $("#aaaaaa").prop("checked", true);
+        $('html').addClass('dark');
+    }
+});
+
+
+$('#aaaaaa').change(function () {
+    if ($("#aaaaaa").prop('checked') == true) {
+        localStorage.setItem("theme", "dark");
+        $('html').addClass('dark');
+    }
+    else {
+        localStorage.removeItem("theme");
+        $('html').removeClass('dark');
+    }
+});
+
