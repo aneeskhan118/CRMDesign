@@ -956,7 +956,11 @@
     <Content Include="Content\sass\plugins\table\datatable\dt-global_style-dark.scss" />
     <Content Include="Content\sass\plugins\table\datatable\dt-global_style.scss" />
     <Content Include="Content\sass\plugins\tagInput\tags-input.scss" />
+    <Content Include="Script\city.js" />
+    <Content Include="Script\country.js" />
     <Content Include="Script\customer.js" />
+    <Content Include="Script\product.js" />
+    <Content Include="Script\state.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -995,6 +999,9 @@
     <Content Include="Views\Customer\customerInfo.cshtml" />
     <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Brand\Index.cshtml" />
+    <Content Include="Views\Location\_Country.cshtml" />
+    <Content Include="Views\Location\_State.cshtml" />
+    <Content Include="Views\Location\_City.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

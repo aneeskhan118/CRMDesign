@@ -4,7 +4,7 @@
 }
 
 <div class="layout-top-spacing">
-    <div class="widget-content widget-content-area animated-underline-content">
+    <div class="widget-content widget-content-area animated-underline-content mb-4">
 
         <ul class="nav nav-tabs  mb-3" id="animateLine" role="tablist">
             <li class="nav-item">
@@ -19,15 +19,127 @@
         </ul>
 
         <div class="tab-content" id="animateLineContent-4">
-            <div class="tab-pane fade show active" id="animated-underline-country" role="tabpanel" aria-labelledby="animated-underline-home-country">
-                Hello
+            <div class="tab-pane fade show active p-0" id="animated-underline-country" role="tabpanel" aria-labelledby="animated-underline-home-country">
+                @{
+                    Html.RenderPartial("_Country");
+                }
             </div>
-            <div class="tab-pane fade" id="animated-underline-state" role="tabpanel" aria-labelledby="animated-underline-state-tab">
-                Hello user
+            <div class="tab-pane fade p-0" id="animated-underline-state" role="tabpanel" aria-labelledby="animated-underline-state-tab">
+                @{
+                    Html.RenderPartial("_State");
+                }
             </div>
-            <div class="tab-pane fade" id="animated-underline-city" role="tabpanel" aria-labelledby="animated-underline-city-tab">
-                Hello World!!
+            <div class="tab-pane fade p-0" id="animated-underline-city" role="tabpanel" aria-labelledby="animated-underline-city-tab">
+                @{
+                    Html.RenderPartial("_City");
+                }
             </div>
         </div>
     </div>
 </div>
+
+<div class="modal fade" id="countryModal" tabindex="-1" role="dialog" aria-labelledby="countryModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="countryModalLabel">Add Country</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 float-left">
+                        <div class="form-group">
+                            <label for="country">Country Name</label>
+                            <input type="text" class="form-control" id="country" placeholder="Country Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6 float-left">
+                        <div class="form-group">
+                            <label for="countrySh">Shortcode</label>
+                            <input type="text" class="form-control" id="countrySh" placeholder="Shortcode">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save</button>
+                <button class="btn" data-dismiss="modal">Discard</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cityModal" tabindex="-1" role="dialog" aria-labelledby="cityModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cityModalLabel">Add City</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 float-left">
+                        <div class="form-group">
+                            <label for="city">City Name</label>
+                            <input type="text" class="form-control mb-4 mb-md-0" id="city" placeholder="City Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6 float-left">
+                        <div class="form-group">
+                            <label for="citySh">Shortcode</label>
+                            <input type="text" class="form-control mb-4 mb-md-0" id="citySh" placeholder="Shortcode">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save</button>
+                <button class="btn" data-dismiss="modal">Discard</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="stateModal" tabindex="-1" role="dialog" aria-labelledby="stateModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="stateModalLabel">Add State</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6 float-left">
+                        <div class="form-group">
+                            <label for="state">State Name</label>
+                            <input type="text" class="form-control" id="state" placeholder="State Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6 float-left">
+                        <div class="form-group">
+                            <label for="stateSh">Shortcode</label>
+                            <input type="text" class="form-control" id="stateSh" placeholder="Shortcode">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save</button>
+                <button class="btn" data-dismiss="modal">Discard</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts {
+    <script src="~/Script/country.js"></script>
+    <script src="~/Script/state.js"></script>
+    <script src="~/Script/city.js"></script>
+}

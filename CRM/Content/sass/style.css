@@ -14,13 +14,9 @@
 
 /* Scroll style for -webkit- engines */
 /*Product Page CSS Start*/
-.productBtn button {
-  min-width: 15rem; }
-
-.productBtn .dropdown-menu {
-  left: unset !important;
-  right: 0px;
-  min-width: 15rem; }
+.productBtn select {
+  max-width: 300px;
+  width: auto; }
 
 /*Product Page CSS End*/
 /*Datatable with custom button css start*/
@@ -68,3 +64,26 @@
   color: #ec737b; }
 
 /*Datatable with custom button css end*/
+/*Basic Datatable Design start*/
+.basic-theme-datatable table {
+  border-collapse: collapse !important; }
+  .basic-theme-datatable table thead tr:first-child, .basic-theme-datatable table thead tr:last-child, .basic-theme-datatable table tbody tr:first-child, .basic-theme-datatable table tbody tr:last-child {
+    border-radius: 0px; }
+  .basic-theme-datatable table tbody tr {
+    border-bottom: 1px solid #e0e6ed; }
+    .basic-theme-datatable table tbody tr:hover {
+      border-top: 2px solid #e0e6ed; }
+
+/*Basic Datatable Design end*/
+/*Brand page design start*/
+.brandImg {
+  height: 90px;
+  width: 90px; }
+  .brandImg img {
+    width: 100%;
+    height: auto; }
+
+#product-table tbody tr:hover {
+  border-top: 3px solid #e0e6ed; }
+
+/*Brand page design end*/
