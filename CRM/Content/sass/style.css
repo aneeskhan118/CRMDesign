@@ -1,32 +1,70 @@
-﻿.actionButton {
-  position: absolute;
-  top: 32px;
-  right: 280px;
-  z-index: 1; }
-  @media (max-width: 767px) {
-    .actionButton {
-      position: relative;
-      justify-content: center;
-      margin-bottom: 8px;
-      margin-left: 40px;
-      top: auto;
-      right: auto; } }
-  .actionButton .addButton, .actionButton .deleteButton {
-    padding: 9px;
-    background: #ffffff;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 15px;
-    box-shadow: 0px 2px 4px rgba(126, 142, 177, 0.12);
-    width: 43px;
-    height: 41px;
-    fill: rgba(27, 85, 226, 0.239216); }
-  .actionButton .addButton svg {
-    color: #1b55e2; }
-  .actionButton .addButton:hover svg {
-    color: #515365;
-    fill: rgba(0, 23, 55, 0.08); }
-  .actionButton .deleteButton svg {
-    color: #e22f39; }
-  .actionButton .deleteButton:hover svg {
-    color: #ec737b; }
+﻿/* Scroll style for -webkit- engines */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px; }
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); }
+
+::-webkit-scrollbar-thumb {
+  background-color: #1B55E2;
+  outline: 1px solid #1B55E2;
+  border-radius: 0px; }
+
+/* Scroll style for -webkit- engines */
+/*Product Page CSS Start*/
+.productBtn button {
+  min-width: 15rem; }
+
+.productBtn .dropdown-menu {
+  left: unset !important;
+  right: 0px;
+  min-width: 15rem; }
+
+/*Product Page CSS End*/
+/*Datatable with custom button css start*/
+.theme-datatable .dataTables_length {
+  float: left;
+  display: inline-flex; }
+
+.theme-datatable .dataTables_filter {
+  display: inline-flex;
+  float: right;
+  align-items: center;
+  flex-direction: row-reverse; }
+
+.theme-datatable .dataTables_paginate {
+  float: right; }
+
+.theme-datatable .addButton, .theme-datatable .deleteButton {
+  padding: 9px;
+  background: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 15px;
+  box-shadow: 0px 2px 4px rgba(126, 142, 177, 0.12);
+  width: 43px;
+  height: 41px;
+  fill: rgba(27, 85, 226, 0.239216);
+  position: relative !important;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.theme-datatable .addButton svg {
+  color: #1b55e2 !important;
+  position: unset !important; }
+
+.theme-datatable .addButton:hover svg {
+  color: #515365;
+  fill: rgba(0, 23, 55, 0.08); }
+
+.theme-datatable .deleteButton svg {
+  color: #e22f39 !important;
+  position: unset !important; }
+
+.theme-datatable .deleteButton:hover svg {
+  color: #ec737b; }
+
+/*Datatable with custom button css end*/

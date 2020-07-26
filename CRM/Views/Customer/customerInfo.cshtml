@@ -1,7 +1,6 @@
 ﻿
 @{
     ViewBag.Title = "customerInfo";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="account-settings-container layout-top-spacing">
@@ -66,13 +65,16 @@
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="dob">Date of Birth</label>
-                                                        <input type="date" class="form-control mb-4" id="dob" placeholder="DOB">
+                                                        <input type="text" class="form-control mb-4" id="dobPickr" placeholder="Date of Birth">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="endDate">Enter Access End Date</label>
-                                                        <input type="date" class="form-control mb-4" id="endDate" placeholder="Enter Access End Date">
+                                                        <div class="d-flex">
+                                                            <input id="basicFlatpickr" class="form-control mr-2 flatpickr flatpickr-input active" type="text" placeholder="Select Access End Date">
+                                                            <input id="timeFlatpickr" class="form-control ml-2 flatpickr flatpickr-input active" type="text" placeholder="Select Time">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -226,7 +228,7 @@
         </div>
     </div>
 
-    <div class="account-settings-footer position-relative w-100">
+    <div class="account-settings-footer">
 
         <div class="as-footer-container">
 

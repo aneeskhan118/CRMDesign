@@ -1,16 +1,51 @@
-﻿.actionButton {
-    position: absolute;
-    top: 32px;
-    right: 280px;
-    z-index: 1;
+﻿/* Scroll style for -webkit- engines */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
 
-    @media (max-width: 767px) {
-        position: relative;
-        justify-content: center;
-        margin-bottom: 8px;
-        margin-left: 40px;
-        top: auto;
-        right: auto;
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1B55E2;
+    outline: 1px solid #1B55E2;
+    border-radius: 0px;
+}
+
+/* Scroll style for -webkit- engines */
+
+/*Product Page CSS Start*/
+.productBtn {
+    button {
+        min-width: 15rem;
+    }
+    .dropdown-menu {
+        left: unset !important;
+        right: 0px;
+        min-width: 15rem;
+    }
+}
+/*Product Page CSS End*/
+
+/*Datatable with custom button css start*/
+.theme-datatable {
+    .dataTables_length {
+        float: left;
+        display: inline-flex;
+    }
+
+    .dataTables_filter {
+        display: inline-flex;
+        float: right;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .dataTables_paginate {
+        float: right;
     }
 
     .addButton, .deleteButton {
@@ -23,11 +58,16 @@
         width: 43px;
         height: 41px;
         fill: rgba(27, 85, 226, 0.239216);
+        position: relative !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .addButton {
         svg {
-            color: #1b55e2;
+            color: #1b55e2 !important;
+            position: unset !important;
         }
 
         &:hover {
@@ -40,7 +80,8 @@
 
     .deleteButton {
         svg {
-            color: #e22f39;
+            color: #e22f39 !important;
+            position: unset !important;
         }
 
         &:hover {
@@ -50,3 +91,4 @@
         }
     }
 }
+/*Datatable with custom button css end*/

@@ -6,8 +6,9 @@ using System.Web.Mvc;
 
 namespace CRM.Controllers
 {
-    public class HomeController : Controller
+    public class LocationController : Controller
     {
+        // GET: Location
         public ActionResult Index()
         {
             return View();

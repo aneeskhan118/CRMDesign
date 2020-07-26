@@ -1,7 +1,7 @@
 @import url('main.css');
 @import url('../../plugins/perfect-scrollbar/perfect-scrollbar.css');
-@import url('structure.css');
-/*@import url('theme.css');*/
+/*@import url('structure.css');*/
+@import url('theme.css');
 /*
     Importing highlight.js CSS code 
 

@@ -149,7 +149,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\BrandController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LocationController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -210,6 +214,8 @@
     <Content Include="Content\assets\css\scrollspyNav.css" />
     <Content Include="Content\assets\css\structure.css" />
     <Content Include="Content\assets\css\tables\table-basic.css" />
+    <Content Include="Content\assets\css\theme.css" />
+    <Content Include="Content\assets\css\theme.min.css" />
     <Content Include="Content\assets\css\users\account-setting.css" />
     <Content Include="Content\assets\css\users\user-profile.css" />
     <Content Include="Content\assets\css\widgets\modules-widgets.css" />
@@ -967,7 +973,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_Sidebar.cshtml" />
-    <Content Include="Views\Home\customer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -983,8 +988,13 @@
     <None Include="compilerconfig.json.defaults">
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
+    <Content Include="Content\assets\css\theme.scss" />
     <None Include="Project_Readme.html" />
-    <Content Include="Views\Home\customerInfo.cshtml" />
+    <Content Include="Views\Customer\Index.cshtml" />
+    <Content Include="Views\Location\Index.cshtml" />
+    <Content Include="Views\Customer\customerInfo.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
+    <Content Include="Views\Brand\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
