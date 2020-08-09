@@ -150,10 +150,14 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BrandController.cs" />
+    <Compile Include="Controllers\BulkImageController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\CsvController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LocationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
+    <Compile Include="Controllers\WorkerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -956,11 +960,17 @@
     <Content Include="Content\sass\plugins\table\datatable\dt-global_style-dark.scss" />
     <Content Include="Content\sass\plugins\table\datatable\dt-global_style.scss" />
     <Content Include="Content\sass\plugins\tagInput\tags-input.scss" />
+    <Content Include="Script\bulkImage.js" />
+    <Content Include="Script\category.js" />
     <Content Include="Script\city.js" />
     <Content Include="Script\country.js" />
     <Content Include="Script\customer.js" />
+    <Content Include="Script\myCatalouge.js" />
+    <Content Include="Script\myCollection.js" />
     <Content Include="Script\product.js" />
+    <Content Include="Script\productList.js" />
     <Content Include="Script\state.js" />
+    <Content Include="Script\worker.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -1002,6 +1012,20 @@
     <Content Include="Views\Location\_Country.cshtml" />
     <Content Include="Views\Location\_State.cshtml" />
     <Content Include="Views\Location\_City.cshtml" />
+    <Content Include="Views\Product\_tone.cshtml" />
+    <Content Include="Views\Product\_melting.cshtml" />
+    <Content Include="Views\Product\_size.cshtml" />
+    <Content Include="Views\Product\_polish.cshtml" />
+    <Content Include="Views\Product\productList.cshtml" />
+    <Content Include="Views\Product\myCollection.cshtml" />
+    <Content Include="Views\Product\myCatalouge.cshtml" />
+    <Content Include="Views\Category\Index.cshtml" />
+    <Content Include="Views\Worker\Index.cshtml" />
+    <Content Include="Views\Product\addProductList.cshtml" />
+    <Content Include="Views\Csv\Index.cshtml" />
+    <Content Include="Views\Csv\_updateProduct.cshtml" />
+    <Content Include="Views\Csv\_productMaster.cshtml" />
+    <Content Include="Views\BulkImage\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

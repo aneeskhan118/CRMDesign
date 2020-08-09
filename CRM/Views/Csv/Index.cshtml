@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Upload CSV";
+}
+
+<div class="layout-top-spacing">
+    <div class="widget-content widget-content-area animated-underline-content mb-4">
+        <ul class="nav nav-tabs  mb-3" id="animateLine" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="animated-underline-country-tab" data-toggle="tab" href="#animated-underline-country" role="tab" aria-controls="animated-underline-country" aria-selected="true">Product Master</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="animated-underline-state-tab" data-toggle="tab" href="#animated-underline-state" role="tab" aria-controls="animated-underline-state" aria-selected="false">Update Products</a>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="animateLineContent-4">
+            <div class="tab-pane fade show active p-0" id="animated-underline-country" role="tabpanel" aria-labelledby="animated-underline-home-country">
+                @{
+                    Html.RenderPartial("_productMaster");
+                }
+            </div>
+            <div class="tab-pane fade p-0" id="animated-underline-state" role="tabpanel" aria-labelledby="animated-underline-state-tab">
+                @{
+                    Html.RenderPartial("_updateProduct");
+                }
+            </div>
+        </div>
+    </div>
+</div>

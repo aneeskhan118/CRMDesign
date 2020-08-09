@@ -127,7 +127,7 @@
     }
 }
 
-#product-table {
+#product-table, #productList-table {
     tbody {
         tr {
             &:hover {
@@ -137,3 +137,8 @@
     }
 }
 /*Brand page design end*/
+
+textarea {
+    resize: none;
+    min-height: 100px;
+}

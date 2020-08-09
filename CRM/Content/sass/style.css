@@ -83,7 +83,10 @@
     width: 100%;
     height: auto; }
 
-#product-table tbody tr:hover {
+#product-table tbody tr:hover, #productList-table tbody tr:hover {
   border-top: 3px solid #e0e6ed; }
 
 /*Brand page design end*/
+textarea {
+  resize: none;
+  min-height: 100px; }

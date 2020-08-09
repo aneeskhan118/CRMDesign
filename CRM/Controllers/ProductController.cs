@@ -13,5 +13,25 @@ namespace CRM.Controllers
         {
             return View();
         }
+
+        public ActionResult productList()
+        {
+            return View();
+        }
+
+        public ActionResult myCollection()
+        {
+            return View();
+        }
+
+        public ActionResult myCatalouge()
+        {
+            return View();
+        }
+
+        public ActionResult addProductList()
+        {
+            return View();
+        }
     }
 }

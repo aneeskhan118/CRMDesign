@@ -80,7 +80,7 @@
   transition: all 0.2s ease;
   margin-top: 54px;
   margin-bottom: 40px;
-  height: 250px;
+  height: 350px;
   width: 100%;
   border-radius: 4px;
   background-size: contain;
@@ -101,7 +101,7 @@
   float: left;
   margin: 1.858736%;
   width: 29.615861214%;
-  height: 90px;
+  height: 100px;
   box-shadow: 0 4px 10px 0 rgba(51, 51, 51, 0.25); }
 
 .custom-file-container__image-multi-preview__single-image-clear {

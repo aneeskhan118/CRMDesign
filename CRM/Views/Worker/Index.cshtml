@@ -1,0 +1,1270 @@
+﻿
+@{
+    ViewBag.Title = "Worker";
+}
+
+<div class="layout-top-spacing">
+    <div class="widget-content widget-content-area mb-4">
+        <div class="table-responsive theme-datatable basic-theme-datatable mt-4">
+            <table id="worker-table" class="table table-hover non-hover">
+                <thead>
+                    <tr>
+                        <th>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </th>
+                        <th>Worker Name</th>
+                        <th>Company Name</th>
+                        <th>Mobile Number</th>
+                        <th>Status</th>
+                        <th>Email ID</th>
+                        <th>Orders</th>
+                        <th class="text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </td>
+                        <td>Casting</td>
+                        <td>Casting</td>
+                        <td>9867860292</td>
+                        <td>Available</td>
+                        <td>facorders@royalchains.com</td>
+                        <td class="text-center">
+                            <div class="dropdown custom-dropdown">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                    <a class="dropdown-item" href="javascript:void(0);">Orders</a>
+                                    <a class="dropdown-item" href="javascript:void(0);">Customized Orders</a>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <ul class="table-controls d-flex align-items-center justify-content-center">
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="stateModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="stateModalLabel">Add Worker</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 float-left">
+                        <div class="form-group float-left w-100 mb-3">
+                            <label for="name">Worker Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter Worker Name">
+                        </div>
+                        <div class="form-group float-left w-100 mb-3">
+                            <label for="mobile">Mobile Number</label>
+                            <input type="text" class="form-control" id="mobile" placeholder="Mobile Number">
+                        </div>
+                        <div class="form-group float-left w-100 mb-3">
+                            <label for="companyName">Company Name</label>
+                            <input type="text" class="form-control" id="companyName" placeholder="Enter Company Name">
+                        </div>
+                        <div class="form-group float-left w-100 mb-3">
+                            <label for="email">Email ID</label>
+                            <input type="text" class="form-control" id="email" placeholder="Enter Email">
+                        </div>
+                        <div class="form-group float-left w-100 mb-3">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                        </div>
+                        <div class="form-group float-left w-100 mb-3">
+                            <label for="address">Address</label>
+                            <textarea class="form-control" id="address" placeholder="Enter Address"></textarea>
+                        </div>
+                        <div class="form-group float-left w-100 mb-0">
+                            <label for="wrkStatus">Worker Status</label>
+                            <select class="selectpicker w-100" id="wrkStatus">
+                                <option>Select Status</option>
+                                <option>Active</option>
+                                <option>Deactivate</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save</button>
+                <button class="btn" data-dismiss="modal">Discard</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/Script/worker.js"></script>
+}

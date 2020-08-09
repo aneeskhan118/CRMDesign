@@ -2273,3 +2273,6 @@ code {
     padding: 24px 12px; }
   .navbar .navbar-item .nav-item.dropdown.notification-dropdown .dropdown-menu:after {
     right: 64px; } }
+
+.cursor-default {
+  cursor: default !important; }
