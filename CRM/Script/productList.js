@@ -24,9 +24,7 @@ addDeleteIcon += '</a>';
 
 $("#productList-table_filter").append(addDeleteIcon);
 
-
 // Delete Alert
-
 $('.deleteButton').on('click', function () {
     const swalWithBootstrapButtons = swal.mixin({
         confirmButtonClass: 'btn btn-success btn-rounded',

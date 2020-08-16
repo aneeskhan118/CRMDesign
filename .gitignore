@@ -4,3 +4,6 @@
 CRM/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 .vs/CRM/v15/.suo
 .vs/CRM/v15/Server/sqlite3/storage.ide-wal
+CRM/bin
+CRM/obj
+.vs/CRM/v15

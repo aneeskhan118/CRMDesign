@@ -285,12 +285,24 @@ var App = function() {
 
 }();
 
+window.addEventListener("load", function () {
+    var load_screen = document.getElementById("load_screen");
+    document.body.removeChild(load_screen);
+});
+
 
 $(document).ready(function () {
     if (localStorage.getItem("theme")) {
         $("#aaaaaa").prop("checked", true);
         $('html').addClass('dark');
     }
+
+    var path = window.location.href;
+    $('#accordionExample li a').each(function () {
+        if (this.href === path) {
+            $(this).addClass('active');
+        }
+    });
 });
 
 

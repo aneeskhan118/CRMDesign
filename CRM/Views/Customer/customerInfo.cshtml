@@ -17,9 +17,9 @@
                                         <div class="col-md-11 mx-auto">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <div class="form-group">
+                                                    <div class="form-group mb-4">
                                                         <label for="userType">User Type</label>
-                                                        <select class="selectpicker w-100" id="userType">
+                                                        <select class="selectpicker custom-bsSelect w-100" id="userType">
                                                             <option>Select User Type</option>
                                                             <option>Admin</option>
                                                             <option>Client</option>
@@ -28,9 +28,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div class="form-group">
+                                                    <div class="form-group mb-4">
                                                         <label for="userStatus">User Status</label>
-                                                        <select class="selectpicker w-100" id="userStatus">
+                                                        <select class="selectpicker custom-bsSelect w-100" id="userStatus">
                                                             <option>Select User Status</option>
                                                             <option>Active</option>
                                                             <option>Inactive</option>
@@ -38,37 +38,41 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div class="form-group">
+                                                    <div class="form-group mb-4">
                                                         <label for="name">Name</label>
-                                                        <input type="text" class="form-control mb-4" id="name" placeholder="Name">
+                                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                                        <small class="text-danger">Error error</small>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div class="form-group">
+                                                    <div class="form-group mb-4">
                                                         <label for="phone">Mobile No.</label>
-                                                        <input type="tel" class="form-control mb-4" id="phone" placeholder="Mobile Number" value="">
+                                                        <input type="tel" class="form-control" id="phone" placeholder="Mobile Number" value="">
+                                                        <small class="text-danger">Error error</small>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div class="form-group">
+                                                    <div class="form-group mb-4">
                                                         <label for="email">Email ID</label>
-                                                        <input type="email" class="form-control mb-4" id="email" placeholder="Email ID" value="">
+                                                        <input type="email" class="form-control" id="email" placeholder="Email ID" value="">
+                                                        <small class="text-danger">Error error</small>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div class="form-group">
+                                                    <div class="form-group mb-4">
                                                         <label for="password">Password</label>
-                                                        <input type="password" class="form-control mb-4" id="password" placeholder="Password">
+                                                        <input type="password" class="form-control" id="password" placeholder="Password">
+                                                        <small class="text-danger">Error error</small>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div class="form-group">
+                                                    <div class="form-group mb-4">
                                                         <label for="dob">Date of Birth</label>
-                                                        <input type="text" class="form-control mb-4" id="dobPickr" placeholder="Date of Birth">
+                                                        <input type="text" class="form-control" id="dobPickr" placeholder="Date of Birth">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <div class="form-group">
+                                                    <div class="form-group mb-4">
                                                         <label for="endDate">Enter Access End Date</label>
                                                         <div class="d-flex">
                                                             <input id="basicFlatpickr" class="form-control mr-2 flatpickr flatpickr-input active" type="text" placeholder="Select Access End Date">
@@ -93,9 +97,9 @@
                                 <div class="col-md-11 mx-auto">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="form-group">
+                                            <div class="form-group mb-4">
                                                 <label for="country">Country</label>
-                                                <select class="selectpicker w-100" id="country">
+                                                <select class="selectpicker custom-bsSelect w-100" id="country">
                                                     <option>Select Country</option>
                                                     <option>United States</option>
                                                     <option>India</option>
@@ -108,9 +112,9 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="state">Address</label>
-                                                <select class="selectpicker w-100" id="state">
+                                            <div class="form-group mb-4">
+                                                <label for="state">State</label>
+                                                <select class="selectpicker custom-bsSelect w-100" id="state">
                                                     <option value="">Select State</option>
                                                     <option value="1">Andaman and Nicobar Islands</option>
                                                     <option value="2">Andhra Pradesh</option>
@@ -157,15 +161,19 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group">
+                                            <div class="form-group mb-4">
                                                 <label for="city">City</label>
-                                                <input type="text" class="form-control mb-4" id="city" placeholder="City">
+                                                <select class="selectpicker custom-bsSelect w-100" id="city">
+                                                    <option value="">Select City</option>
+                                                    <option value="1">Mumbai</option>
+                                                    <option value="2">Pune</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group">
+                                            <div class="form-group mb-4">
                                                 <label for="pin">Pin Code</label>
-                                                <input type="text" class="form-control mb-4" id="pin" placeholder="Pin Code">
+                                                <input type="text" class="form-control" id="pin" placeholder="Pin Code">
                                             </div>
                                         </div>
                                     </div>
@@ -179,13 +187,13 @@
                     <form id="contact" class="section contact">
                         <div class="info">
                             <h5 class="">Company/Shop Details</h5>
-                            <div class="row">
+                            <div class="row mb-5">
                                 <div class="col-md-11 mx-auto">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="form-group">
+                                            <div class="form-group mb-4">
                                                 <label for="companyType">Company Type</label>
-                                                <select class="selectpicker w-100" id="companyType">
+                                                <select class="selectpicker custom-bsSelect w-100" id="companyType">
                                                     <option>Select Company Type</option>
                                                     <option>Distributor</option>
                                                     <option>Retails</option>
@@ -194,27 +202,27 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group">
+                                            <div class="form-group mb-4">
                                                 <label for="orgName">Shop/Organisation name</label>
-                                                <input type="text" class="form-control mb-4" id="orgName" placeholder="Shop/Organisation name">
+                                                <input type="text" class="form-control" id="orgName" placeholder="Shop/Organisation name">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group">
+                                            <div class="form-group mb-4">
                                                 <label for="designation">Designation</label>
-                                                <input type="text" class="form-control mb-4" id="designation" placeholder="Designation">
+                                                <input type="text" class="form-control" id="designation" placeholder="Designation">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group">
+                                            <div class="form-group mb-4">
                                                 <label for="gst">GST Number</label>
-                                                <input type="text" class="form-control mb-4" id="gst" placeholder="GST Number">
+                                                <input type="text" class="form-control" id="gst" placeholder="GST Number">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="form-group">
+                                            <div class="form-group mb-4">
                                                 <label for="pan">PAN Number</label>
-                                                <input type="text" class="form-control mb-4" id="pan" placeholder="PAN Number">
+                                                <input type="text" class="form-control" id="pan" placeholder="PAN Number">
                                             </div>
                                         </div>
                                     </div>

@@ -25,8 +25,17 @@ addDeleteIcon += '</div>';
 $("#category-table_filter").append(addDeleteIcon);
 
 
-// Delete Alert
+// Delete Alert on Popup
+$('.saveButton').on('click', function () {
+    swal({
+        title: 'Good job!',
+        text: "You clicked the!",
+        type: 'success',
+        padding: '2em'
+    });
+});
 
+// Delete Alert
 $('.deleteButton').on('click', function () {
     const swalWithBootstrapButtons = swal.mixin({
         confirmButtonClass: 'btn btn-success btn-rounded',

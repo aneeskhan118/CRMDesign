@@ -13,6 +13,15 @@
   border-radius: 0px; }
 
 /* Scroll style for -webkit- engines */
+/* Side Menu CSS Starts */
+#sidebar #accordionExample .menu a.active svg {
+  color: #060818;
+  fill: #acb0c3; }
+
+#sidebar #accordionExample .menu a.active span {
+  color: #060818; }
+
+/* Side Menu CSS Ends */
 /*Product Page CSS Start*/
 .productBtn select {
   max-width: 300px;
@@ -39,7 +48,7 @@
   border-radius: 5px;
   cursor: pointer;
   margin-right: 15px;
-  box-shadow: 0px 2px 4px rgba(126, 142, 177, 0.12);
+  box-shadow: 2px 5px 17px 0 rgba(31, 45, 61, 0.1);
   width: 43px;
   height: 41px;
   fill: rgba(27, 85, 226, 0.239216);
@@ -90,3 +99,13 @@
 textarea {
   resize: none;
   min-height: 100px; }
+
+/*Custom Bootstrap Select CSS Starts*/
+.custom-bsSelect.bootstrap-select .dropdown-toggle.mb-2 {
+  margin-bottom: 0px !important; }
+
+.custom-bsSelect.bootstrap-select .dropdown-menu .dropdown-item:not(:last-child) {
+  border-bottom: 1px solid #acb0c3;
+  border-radius: 0px; }
+
+/*Custom Bootstrap Select CSS Ends*/
