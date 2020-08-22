@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "unsoldCart";
+}
+
+<div class="page-header mt-4 py-0 px-3 col-12 widget">
+    <div class="page-title my-3">
+        <h3>Unsold Cart List</h3>
+    </div>
+</div>
+
+<div class="layout-top-spacing">
+    <div class="widget-content widget-content-area mb-4">
+        <div class="table-responsive theme-datatable basic-theme-datatable mt-4">
+            <table id="unsoldCart-table" class="table table-hover non-hover">
+                <thead>
+                    <tr>
+                        <th>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </th>
+                        <th>Full Name</th>
+                        <th>Mobole Number</th>
+                        <th>Email ID</th>
+                        <th>User Status</th>
+                        <th>Products in Cart</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (var i = 0; i < 32; i++)
+                    {
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>ajinkya</td>
+                            <td>8446116325</td>
+                            <td>ajinkyapalv@gmail.com</td>
+                            <td class="text-center"><span class="shadow-none badge badge-primary">Active</span></td>
+                            <td>
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-2">18</span>
+                                    <a href="/Orders/cartList" class="bs-tooltip text-info" data-toggle="tooltip" data-placement="top" title="" data-original-title="View Cart">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-package"><line x1="16.5" y1="9.4" x2="7.5" y2="4.21"></line><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="dropdown custom-dropdown">
+                                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                        <a class="dropdown-item" href="/Orders/cartList">View</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                        <a class="dropdown-item" href="javascript:void(0);">SMS</a>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/Script/unsoldCart.js"></script>
+}

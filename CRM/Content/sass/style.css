@@ -109,3 +109,16 @@ textarea {
   border-radius: 0px; }
 
 /*Custom Bootstrap Select CSS Ends*/
+.smsCountDiv {
+  box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.0901961), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
+  min-height: 70px;
+  height: 70px;
+  max-height: 70px; }
+  .smsCountDiv svg {
+    width: calc(100% - 20px);
+    height: calc(100% - 25px); }
+
+.dragDiv, .dropDiv {
+  max-height: 250px;
+  height: 175px;
+  min-height: 175px; }

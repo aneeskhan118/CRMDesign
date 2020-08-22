@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewBag.Title = "sendSMS";
+}
+
+<div class="page-header mt-4 py-0 px-3 col-12 widget">
+    <div class="page-title my-3">
+        <h3>Send SMS</h3>
+    </div>
+</div>
+
+<div class="layout-top-spacing">
+    <div class="widget-content widget-content-area mb-4 float-left w-100">
+        <div class="col-12 mb-3 p-0 float-left">
+            <div class="col-12 col-sm-12 col-md-3 float-left d-flex p-0 smsCountDiv">
+                <div class="col-3 p-0 d-flex align-items-center justify-content-center bg-info float-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="col-9 px-2 py-1 float-left font-weight-bold">
+                    <h4 class="mb-1">Transction</h4>
+                    <span>24892</span>
+                </div>
+            </div>
+        </div>
+        <div class="float-left col-12 p-0 mb-3">
+            <h5 class="font-weight-bold float-left w-100">Message</h5>
+            <textarea class="form-control" placeholder="Enter Message"></textarea>
+        </div>
+        <div class="col-12 p-0 float-left mb-3 animated-underline-content">
+            <ul class="nav nav-tabs  mb-3" id="animateLine" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="animated-underline-allUser-tab" data-toggle="tab" href="#animated-underline-allUser" role="tab" aria-controls="animated-underline-allUser" aria-selected="true">All Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="animated-underline-specificUser-tab" data-toggle="tab" href="#animated-underline-specificUser" role="tab" aria-controls="animated-underline-specificUser" aria-selected="false">Specific User</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="animated-underline-selectiveUser-tab" data-toggle="tab" href="#animated-underline-selectiveUser" role="tab" aria-controls="animated-underline-selectiveUser" aria-selected="false">Selective Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="animated-underline-audience-tab" data-toggle="tab" href="#animated-underline-audience" role="tab" aria-controls="animated-underline-audience" aria-selected="false">Audience</a>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="animateLineContent-4">
+                <div class="tab-pane fade show active p-0" id="animated-underline-allUser" role="tabpanel" aria-labelledby="animated-underline-allUser">
+                    @{
+                        Html.RenderPartial("_allUserSMS");
+                    }
+                </div>
+                <div class="tab-pane fade p-0" id="animated-underline-specificUser" role="tabpanel" aria-labelledby="animated-underline-specificUser">
+                    @{
+                        Html.RenderPartial("_specificUserSMS");
+                    }
+                </div>
+                <div class="tab-pane fade p-0" id="animated-underline-selectiveUser" role="tabpanel" aria-labelledby="animated-underline-selectiveUser">
+                    @{
+                        Html.RenderPartial("_selectiveUserSMS");
+                    }
+                </div>
+                <div class="tab-pane fade p-0" id="animated-underline-audience" role="tabpanel" aria-labelledby="animated-underline-audience">
+                    @{
+                        Html.RenderPartial("_audienceSMS");
+                    }
+                </div>
+            </div>
+        </div>
+        <div class="float-left w-100 pt-2 border-top d-flex">
+            <button class="btn btn-success mr-2">Save</button>
+            <button class="btn btn-danger ml-2">Cancel</button>
+        </div>
+    </div>
+</div>

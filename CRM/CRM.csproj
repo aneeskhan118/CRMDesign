@@ -156,6 +156,8 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LocationController.cs" />
+    <Compile Include="Controllers\NotificationController.cs" />
+    <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\WorkerController.cs" />
     <Compile Include="Global.asax.cs">
@@ -960,16 +962,30 @@
     <Content Include="Content\sass\plugins\table\datatable\dt-global_style-dark.scss" />
     <Content Include="Content\sass\plugins\table\datatable\dt-global_style.scss" />
     <Content Include="Content\sass\plugins\tagInput\tags-input.scss" />
+    <Content Include="Script\accessPremission.js" />
+    <Content Include="Script\addUserGroup.js" />
+    <Content Include="Script\brandBanner.js" />
     <Content Include="Script\bulkImage.js" />
+    <Content Include="Script\cartList.js" />
     <Content Include="Script\category.js" />
     <Content Include="Script\city.js" />
     <Content Include="Script\country.js" />
     <Content Include="Script\customer.js" />
+    <Content Include="Script\customOrder.js" />
+    <Content Include="Script\customOrderRejectList.js" />
     <Content Include="Script\myCatalouge.js" />
     <Content Include="Script\myCollection.js" />
+    <Content Include="Script\notification.js" />
+    <Content Include="Script\orderRejectList.js" />
+    <Content Include="Script\orders.js" />
     <Content Include="Script\product.js" />
     <Content Include="Script\productList.js" />
+    <Content Include="Script\splashMarketing.js" />
     <Content Include="Script\state.js" />
+    <Content Include="Script\systemSetting.js" />
+    <Content Include="Script\unsoldCart.js" />
+    <Content Include="Script\userGroup.js" />
+    <Content Include="Script\viewUserGroup.js" />
     <Content Include="Script\worker.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -1026,6 +1042,25 @@
     <Content Include="Views\Csv\_updateProduct.cshtml" />
     <Content Include="Views\Csv\_productMaster.cshtml" />
     <Content Include="Views\BulkImage\Index.cshtml" />
+    <Content Include="Views\Orders\order.cshtml" />
+    <Content Include="Views\Orders\orderRejectList.cshtml" />
+    <Content Include="Views\Orders\customOrder.cshtml" />
+    <Content Include="Views\Orders\customOrderRejectList.cshtml" />
+    <Content Include="Views\Orders\unsoldCart.cshtml" />
+    <Content Include="Views\Notification\systemSettings.cshtml" />
+    <Content Include="Views\Notification\notificationMarketing.cshtml" />
+    <Content Include="Views\Notification\splashMarketing.cshtml" />
+    <Content Include="Views\Notification\accessPermission.cshtml" />
+    <Content Include="Views\Notification\userGroup.cshtml" />
+    <Content Include="Views\Notification\sendSMS.cshtml" />
+    <Content Include="Views\Notification\sendPush.cshtml" />
+    <Content Include="Views\Notification\viewUser.cshtml" />
+    <Content Include="Views\Notification\addUser.cshtml" />
+    <Content Include="Views\Notification\_allUserSMS.cshtml" />
+    <Content Include="Views\Notification\_selectiveUserSMS.cshtml" />
+    <Content Include="Views\Notification\_specificUserSMS.cshtml" />
+    <Content Include="Views\Notification\_audienceSMS.cshtml" />
+    <Content Include="Views\Orders\cartList.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

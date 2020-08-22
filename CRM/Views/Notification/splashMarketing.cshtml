@@ -1,0 +1,110 @@
+﻿
+@{
+    ViewBag.Title = "splashMarketing";
+}
+
+<div class="page-header mt-4 py-0 px-3 col-12 widget">
+    <div class="page-title my-3">
+        <h3>Splash Marketing List</h3>
+    </div>
+</div>
+
+
+<div class="layout-top-spacing">
+    <div class="widget-content widget-content-area mb-4">
+        <div class="table-responsive theme-datatable basic-theme-datatable mt-4">
+            <table id="splash-table" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </th>
+                        <th>Status</th>
+                        <th>Image</th>
+                        <th>Description</th>
+                        <th class="text-center">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (var i = 0; i < 32; i++)
+                    {
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td><span class="shadow-none badge badge-primary">Active</span></td>
+                            <td>
+                                <div class="brandImg">
+                                    <img src="~/Content/assets/img/90x90.jpg" />
+                                </div>
+                            </td>
+                            <td>What is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing.</td>
+                            <td class="text-center">
+                                <ul class="table-controls d-flex align-items-center justify-content-center">
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
+                                    <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="stateModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="stateModalLabel">Add Splash</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 float-left">
+                        <div class="form-group float-left w-100 mb-3">
+                            <label for="status">Status</label>
+                            <select class="selectpicker custom-bsSelect w-100" id="status">
+                                <option>Select Status</option>
+                                <option>Active</option>
+                                <option>In Active</option>
+                            </select>
+                        </div>
+                        <div class="form-group float-left w-100 mb-3">
+                            <label for="imgUpload">Upload Image</label>
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="imgUpload">
+                                    <label class="custom-file-label m-0 bg-white border" for="imgUpload">Choose file</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group float-left w-100 mb-0 mt-3">
+                            <label for="imgDesc">Image Description</label>
+                            <textarea class="form-control" id="imgDesc" placeholder="Enter Image Description"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary saveButton">Save</button>
+                <button class="btn" data-dismiss="modal">Discard</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/Script/splashMarketing.js"></script>
+}

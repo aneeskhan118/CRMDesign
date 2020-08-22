@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "cartList";
+}
+
+<div class="page-header mt-4 py-0 px-3 col-12 widget">
+    <div class="page-title my-3">
+        <h3>Cart List</h3>
+    </div>
+</div>
+
+<div class="page-header mt-4 py-0 px-3 col-12 widget">
+    <div class="page-title my-3 col-12 p-0 float-left">
+        <div class="col-12 col-sm-12 col-md-4 p-0 float-left font-weight-bold">
+            Total Gross Weight : 284
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 p-0 px-md-2 float-left font-weight-bold">
+            Total Net Weight : 0
+        </div>
+        <div class="col-12 col-sm-12 col-md-4 p-0 float-left font-weight-bold">
+            Total Quantity : 4
+        </div>
+    </div>
+</div>
+
+<div class="layout-top-spacing">
+    <div class="widget-content widget-content-area mb-4">
+        <div class="table-responsive theme-datatable basic-theme-datatable mt-4">
+            <table id="cartList-table" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </th>
+                        <th>SKU Code</th>
+                        <th>Gross Weight</th>
+                        <th>Net Weight</th>
+                        <th>Quantity</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (var i = 0; i < 32; i++)
+                    {
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>CHOCO 011</td>
+                            <td>284.000</td>
+                            <td>0.000</td>
+                            <td>4</td>
+                            <td>
+                                <div class="brandImg">
+                                    <img src="/Content/assets/img/90x90.jpg">
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/Script/cartList.js"></script>
+}

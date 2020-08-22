@@ -1,0 +1,56 @@
+﻿
+@{
+    ViewBag.Title = "viewUser";
+}
+
+<div class="page-header mt-4 py-0 px-3 col-12 widget">
+    <div class="page-title my-3">
+        <h3>Respective User List</h3>
+    </div>
+</div>
+
+<div class="layout-top-spacing">
+    <div class="widget-content widget-content-area mb-4">
+        <div class="table-responsive theme-datatable basic-theme-datatable mt-4">
+            <table id="viewuserGroup-table" class="table table-hover non-hover">
+                <thead>
+                    <tr>
+                        <th>
+                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                <span class="new-control-indicator"></span>
+                                <span style="visibility:hidden;">c</span>
+                            </label>
+                        </th>
+                        <th>Serial No</th>
+                        <th>Full Name</th>
+                        <th>Mobile No</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (var i = 0; i < 32; i++)
+                    {
+                        <tr>
+                            <td>
+                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
+                                    <span class="new-control-indicator"></span>
+                                    <span style="visibility:hidden;">c</span>
+                                </label>
+                            </td>
+                            <td>@i</td>
+                            <td>Demo User</td>
+                            <td>1234567890</td>
+                            <td>Pune</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script src="~/Script/viewUserGroup.js"></script>
+}
