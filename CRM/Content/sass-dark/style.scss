@@ -1,0 +1,202 @@
+﻿/* Scroll style for -webkit- engines */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1B55E2;
+    outline: 1px solid #1B55E2;
+    border-radius: 0px;
+}
+
+/* Scroll style for -webkit- engines */
+
+/* Side Menu CSS Starts */
+#sidebar {
+    #accordionExample {
+        .menu {
+            a.active {
+                svg {
+                    color: #25d5e4;
+                    fill: #191e3a;
+                }
+
+                span {
+                    color: #25d5e4;
+                }
+            }
+        }
+    }
+}
+/* Side Menu CSS Ends */
+
+/*Product Page CSS Start*/
+.productBtn {
+    select {
+        max-width: 300px;
+        width: auto;
+    }
+}
+/*Product Page CSS End*/
+
+/*Datatable with custom button css start*/
+.theme-datatable {
+    .dataTables_length {
+        float: left;
+        display: inline-flex;
+    }
+
+    .dataTables_filter {
+        display: inline-flex;
+        float: right;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .dataTables_paginate {
+        float: right;
+    }
+
+    .addButton, .deleteButton {
+        padding: 9px;
+        background: #ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 15px;
+        box-shadow: 2px 5px 17px 0 rgba(31, 45, 61, 0.1);
+        width: 43px;
+        height: 41px;
+        fill: rgba(27, 85, 226, 0.239216);
+        position: relative !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .addButton {
+        svg {
+            color: #1b55e2 !important;
+            position: unset !important;
+        }
+
+        &:hover {
+            svg {
+                color: #515365;
+                fill: rgba(0, 23, 55, 0.08);
+            }
+        }
+    }
+
+    .deleteButton {
+        svg {
+            color: #e22f39 !important;
+            position: unset !important;
+        }
+
+        &:hover {
+            svg {
+                color: #ec737b;
+            }
+        }
+    }
+}
+/*Datatable with custom button css end*/
+
+/*Basic Datatable Design start*/
+.basic-theme-datatable {
+    table {
+        border-collapse: collapse !important;
+
+        thead, tbody {
+            tr {
+                &:first-child, &:last-child {
+                    border-radius: 0px;
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                border-bottom: 1px solid #e0e6ed;
+
+                &:hover {
+                    border-top: 2px solid #e0e6ed;
+                }
+            }
+        }
+    }
+}
+/*Basic Datatable Design end*/
+
+/*Brand page design start*/
+.brandImg {
+    height: 90px;
+    width: 90px;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+#product-table, #productList-table {
+    tbody {
+        tr {
+            &:hover {
+                border-top: 3px solid #e0e6ed;
+            }
+        }
+    }
+}
+/*Brand page design end*/
+
+textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+/*Custom Bootstrap Select CSS Starts*/
+.custom-bsSelect {
+    &.bootstrap-select {
+        .dropdown-toggle {
+            &.mb-2 {
+                margin-bottom: 0px !important;
+            }
+        }
+
+        .dropdown-menu {
+            .dropdown-item {
+                &:not(:last-child) {
+                    border-bottom: 1px solid #acb0c3;
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+}
+/*Custom Bootstrap Select CSS Ends*/
+
+
+.smsCountDiv {
+    box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.0901961), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
+    min-height: 70px;
+    height: 70px;
+    max-height: 70px;
+
+    svg {
+        width: calc(100% - 20px);
+        height: calc(100% - 25px);
+    }
+}
+
+.dragDiv, .dropDiv {
+    max-height: 250px;
+    height: 175px;
+    min-height: 175px;
+}

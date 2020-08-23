@@ -292,11 +292,6 @@ window.addEventListener("load", function () {
 
 
 $(document).ready(function () {
-    if (localStorage.getItem("theme")) {
-        $("#aaaaaa").prop("checked", true);
-        $('html').addClass('dark');
-    }
-
     var path = window.location.href;
     $('#accordionExample li a').each(function () {
         if (this.href === path) {
@@ -304,16 +299,3 @@ $(document).ready(function () {
         }
     });
 });
-
-
-$('#aaaaaa').change(function () {
-    if ($("#aaaaaa").prop('checked') == true) {
-        localStorage.setItem("theme", "dark");
-        $('html').addClass('dark');
-    }
-    else {
-        localStorage.removeItem("theme");
-        $('html').removeClass('dark');
-    }
-});
-

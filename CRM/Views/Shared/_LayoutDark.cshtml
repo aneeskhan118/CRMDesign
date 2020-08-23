@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+    <title>@ViewBag.Title | Royal Jewellery</title>
+    <link href="~/content/assets-dark/img/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="~/content/assets-dark/css/loader.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet" />
+    <link href="~/content/bootstrap-dark/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/assets-dark/css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/plugins-dark/apex/apexcharts.css" rel="stylesheet" type="text/css">
+    <link href="~/content/assets-dark/css/dashboard/dash_2.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/plugins-dark/dropify/dropify.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/assets-dark/css/users/account-setting.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/plugins-dark/table/datatable/datatables.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/assets-dark/css/forms/theme-checkbox-radio.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/plugins-dark/table/datatable/dt-global_style.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/assets-dark/css/scrollspyNav.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/assets-dark/css/components/tabs-accordian/custom-tabs.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/assets-dark/css/elements/miscellaneous.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/plugins-dark/flatpickr/flatpickr.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/plugins-dark/flatpickr/custom-flatpickr.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/plugins-dark/sweetalerts/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/plugins-dark/sweetalerts/sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/assets-dark/css/components/custom-sweetalert.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/assets-dark/css/components/custom-modal.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/plugins-dark/bootstrap-select/bootstrap-select.min.css" rel="stylesheet" type="text/css">
+    <link href="~/content/plugins-dark/file-upload/file-upload-with-preview.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/content/sass-dark/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- BEGIN LOADER -->
+    <div id="load_screen">
+        <div class="loader">
+            <div class="loader-content">
+                <div class="spinner-grow align-self-center"></div>
+            </div>
+        </div>
+    </div>
+    <!--  END LOADER -->
+    @{
+        Html.RenderPartial("_Header");
+    }
+
+    <div class="main-container" id="container">
+        <div class="overlay"></div>
+        <div class="cs-overlay"></div>
+        <div class="search-overlay"></div>
+
+        @{
+            Html.RenderPartial("_Sidebar");
+        }
+
+        <div id="content" class="main-content">
+            <div class="layout-px-spacing">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+
+    <script src="~/content/assets-dark/js/loader.js"></script>
+    <script src="~/content/assets-dark/js/libs/jquery-3.1.1.min.js"></script>
+    <script src="~/content/bootstrap-dark/js/popper.min.js"></script>
+    <script src="~/content/bootstrap-dark/js/bootstrap.min.js"></script>
+    <script src="~/content/plugins-dark/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="~/content/assets-dark/js/app.js"></script>
+    <script src="~/content/assets-dark/js/scrollspyNav.js"></script>
+    <script>
+        $(document).ready(function () {
+            App.init();
+        });
+    </script>
+    <script src="~/content/assets-dark/js/custom.js"></script>
+    <script src="~/content/plugins-dark/apex/apexcharts.min.js"></script>
+    <script src="~/content/assets-dark/js/dashboard/dash_2.js"></script>
+    <script src="~/content/plugins-dark/dropify/dropify.min.js"></script>
+    <script src="~/content/plugins-dark/blockui/jquery.blockUI.min.js"></script>
+    <script src="~/content/assets-dark/js/users/account-settings.js"></script>
+    <script src="~/content/plugins-dark/table/datatable/datatables.js"></script>
+    <script src="~/Content/plugins-dark/table/datatable/button-ext/dataTables.buttons.min.js"></script>
+    <script src="~/Content/plugins-dark/table/datatable/button-ext/jszip.min.js"></script>
+    <script src="~/Content/plugins-dark/table/datatable/button-ext/buttons.html5.min.js"></script>
+    <script src="~/Content/plugins-dark/table/datatable/button-ext/buttons.print.min.js"></script>
+    <script src="~/content/plugins-dark/flatpickr/flatpickr.js"></script>
+    <script src="~/content/plugins-dark/flatpickr/custom-flatpickr.js"></script>
+    <script src="~/content/plugins-dark/sweetalerts/promise-polyfill.js"></script>
+    <script src="~/content/plugins-dark/sweetalerts/sweetalert2.min.js"></script>
+    <script src="~/content/plugins-dark/sweetalerts/custom-sweetalert.js"></script>
+    <script src="~/content/plugins-dark/bootstrap-select/bootstrap-select.min.js"></script>
+    <script src="~/content/plugins-dark/file-upload/file-upload-with-preview.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
