@@ -105,7 +105,7 @@ code {
   flex-grow: 8;
   margin-top: 59px;
   margin-bottom: 0;
-  margin-left: 255px; }
+  margin-left: 220px; }
 
 .main-container-fluid > .main-content > .container {
   float: left;
@@ -744,7 +744,7 @@ code {
 ===============
 */
 .sidebar-wrapper {
-  width: 255px;
+  width: 220px;
   position: fixed;
   z-index: 1030;
   border-radius: 6px 6px 0 0;
@@ -761,7 +761,7 @@ code {
 .sidebar-closed > .sidebar-wrapper {
   width: 54px; }
   .sidebar-closed > .sidebar-wrapper:hover {
-    width: 255px;
+    width: 220px;
     box-shadow: 6px 0 10px 0 rgba(0, 0, 0, 0.14), 1px 0px 18px 0 rgba(0, 0, 0, 0.12), 3px 0 5px -1px rgba(0, 0, 0, 0.2); }
 
 .sidebar-closed > #content {
@@ -1132,7 +1132,7 @@ code {
 
 @media (min-width: 992px) {
   header.navbar {
-    margin: 0 0 0 233px; }
+    margin: 0 0 0 200px; }
   .sidebar-noneoverflow .header-container {
     padding-left: 80px; }
   .sidebar-closed #sidebar .theme-brand li.theme-text a {

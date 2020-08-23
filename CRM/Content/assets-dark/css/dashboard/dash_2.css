@@ -936,11 +936,6 @@
     ====================
 */
 
-@media(min-width: 1200px) {
-    .table-responsive {
-        overflow-x: hidden;
-    }
-}
 @media(max-width: 1430px) and (min-width: 1200px) {
     /*
         ===========================
