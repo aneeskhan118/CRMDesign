@@ -11,17 +11,11 @@
 
 <div class="layout-top-spacing">
     <div class="widget-content widget-content-area mb-4">
-        <div class="table-responsive theme-datatable basic-theme-datatable mt-4">
+        <div class="table-responsive theme-datatable basic-theme-datatable mt-3">
             <table id="category-table" class="table table-hover non-hover">
                 <thead>
                     <tr>
-                        <th>
-                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
-                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
-                                <span class="new-control-indicator"></span>
-                                <span style="visibility:hidden;">c</span>
-                            </label>
-                        </th>
+                        <th class="checkbox-column"> Record Id </th>
                         <th>Category Name</th>
                         <th>Short Code</th>
                         <th>Position</th>
@@ -29,16 +23,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @for (var i = 0; i < 32; i++)
+                    @for (var i = 1; i < 33; i++)
                     {
                         <tr>
-                            <td>
-                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
-                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
-                                    <span class="new-control-indicator"></span>
-                                    <span style="visibility:hidden;">c</span>
-                                </label>
-                            </td>
+                            <td class="checkbox-column"> @i </td>
                             <td>18 KT ITALIAN CHAIN</td>
                             <td>IT</td>
                             <td>11</td>

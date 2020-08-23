@@ -1,4 +1,20 @@
-﻿$('#category-table').DataTable({
+﻿c1 = $('#category-table').DataTable({
+    buttons: {
+        buttons: [
+            { extend: 'copy', className: 'btn btn-info' },
+            { extend: 'csv', className: 'btn btn-info' },
+            { extend: 'excel', className: 'btn btn-info' },
+            { extend: 'print', className: 'btn btn-info' }
+        ]
+    },
+    headerCallback: function (e, a, t, n, s) {
+        e.getElementsByTagName("th")[0].innerHTML = '<label class="new-control new-checkbox checkbox-outline-primary m-auto">\n<input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">\n<span class="new-control-indicator"></span><span style="visibility:hidden">c</span>\n</label>'
+    },
+    columnDefs: [{
+        targets: 0, width: "30px", className: "", orderable: !1, render: function (e, a, t, n) {
+            return '<label class="new-control new-checkbox checkbox-outline-primary  m-auto">\n<input type="checkbox" class="new-control-input child-chk select-customers-info" id="customer-all-info">\n<span class="new-control-indicator"></span><span style="visibility:hidden">c</span>\n</label>'
+        }
+    }],
     "oLanguage": {
         "oPaginate": { "sPrevious": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>', "sNext": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>' },
         "sInfo": "Showing page _PAGE_ of _PAGES_",
@@ -10,9 +26,11 @@
     "stripeClasses": [],
     "lengthMenu": [5, 10, 20, 50],
     "pageLength": 10,
-    "sDom": 'rlftip',
+    "sDom": '<"row d-flex flex-row-reverse my-2"B>rlftip',
     drawCallback: function () { $('.dataTables_paginate > .pagination').addClass(' pagination-style-13 pagination-bordered mb-5'); }
 });
+
+multiCheck(c1);
 
 var addDeleteIcon = '<div class="deleteButton">';
 addDeleteIcon += '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2  delete-multiple"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>';
