@@ -38,5 +38,10 @@ namespace CRM.Controllers
         {
             return View();
         }
+
+        public ActionResult orderSummary()
+        {
+            return View();
+        }
     }
 }

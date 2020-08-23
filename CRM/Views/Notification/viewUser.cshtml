@@ -18,13 +18,7 @@
             <table id="viewuserGroup-table" class="table table-hover non-hover">
                 <thead>
                     <tr>
-                        <th>
-                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
-                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
-                                <span class="new-control-indicator"></span>
-                                <span style="visibility:hidden;">c</span>
-                            </label>
-                        </th>
+                        <th class="checkbox-column"> Record Id </th>
                         <th>Serial No</th>
                         <th>Full Name</th>
                         <th>Mobile No</th>
@@ -35,13 +29,7 @@
                     @for (var i = 0; i < 32; i++)
                     {
                         <tr>
-                            <td>
-                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
-                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
-                                    <span class="new-control-indicator"></span>
-                                    <span style="visibility:hidden;">c</span>
-                                </label>
-                            </td>
+                            <td class="checkbox-column"> @i </td>
                             <td>@i</td>
                             <td>Demo User</td>
                             <td>1234567890</td>

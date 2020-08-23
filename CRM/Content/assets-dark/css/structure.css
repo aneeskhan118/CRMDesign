@@ -923,13 +923,6 @@ code {
   background-color: transparent;
   transform: rotate(90deg); }
 
-#sidebar ul.menu-categories li.menu > .dropdown-toggle[aria-expanded="true"] svg {
-  color: #25d5e4;
-  fill: #191e3a; }
-
-#sidebar ul.menu-categories li.menu > .dropdown-toggle[aria-expanded="true"] span {
-  color: #25d5e4; }
-
 #sidebar ul.menu-categories li.menu > .dropdown-toggle:hover {
   color: #25d5e4;
   fill: #c2d5ff;

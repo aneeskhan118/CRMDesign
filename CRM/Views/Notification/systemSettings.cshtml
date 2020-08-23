@@ -15,38 +15,33 @@
             <table id="setting-table" class="table table-hover">
                 <thead>
                     <tr>
-                        <th>
-                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
-                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
-                                <span class="new-control-indicator"></span>
-                                <span style="visibility:hidden;">c</span>
-                            </label>
-                        </th>
+                        <th class="checkbox-column"> Record Id </th>
                         <th>Sr No</th>
                         <th>Key</th>
                         <th>Values</th>
+                        <th class="text-center">Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     @for (var i = 0; i < 12; i++)
                     {
                         <tr>
-                            <td>
-                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
-                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
-                                    <span class="new-control-indicator"></span>
-                                    <span style="visibility:hidden;">c</span>
-                                </label>
-                            </td>
+                            <td class="checkbox-column"> @i </td>
                             <td>@i</td>
                             <td>Facebook</td>
                             <td>
                                 <input type="text" class="form-control shadow-none" placeholder="Enter Value" />
                             </td>
+                            <td class="text-center">
+                                <button class="btn btn-success btn-sm shadow-none">Save</button>
+                            </td>
                         </tr>
                     }
                 </tbody>
             </table>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-success btn-sm shadow-none">Save All</button>
         </div>
     </div>
 </div>

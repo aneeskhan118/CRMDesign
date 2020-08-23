@@ -15,13 +15,7 @@
             <table id="worker-table" class="table table-hover non-hover">
                 <thead>
                     <tr>
-                        <th>
-                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
-                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
-                                <span class="new-control-indicator"></span>
-                                <span style="visibility:hidden;">c</span>
-                            </label>
-                        </th>
+                        <th class="checkbox-column"> Record Id </th>
                         <th>Worker Name</th>
                         <th>Company Name</th>
                         <th>Mobile Number</th>
@@ -35,13 +29,7 @@
                     @for (var i = 0; i < 32; i++)
                     {
                         <tr>
-                            <td>
-                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
-                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
-                                    <span class="new-control-indicator"></span>
-                                    <span style="visibility:hidden;">c</span>
-                                </label>
-                            </td>
+                            <td class="checkbox-column"> @i </td>
                             <td>Casting</td>
                             <td>Casting</td>
                             <td>9867860292</td>

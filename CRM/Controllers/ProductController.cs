@@ -33,5 +33,10 @@ namespace CRM.Controllers
         {
             return View();
         }
+
+        public ActionResult addCollection()
+        {
+            return View();
+        }
     }
 }

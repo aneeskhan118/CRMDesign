@@ -3,13 +3,7 @@
     <table id="product-table" class="table table-hover">
         <thead>
             <tr>
-                <th>
-                    <label class="new-control new-checkbox checkbox-outline-primary m-auto">
-                        <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
-                        <span class="new-control-indicator"></span>
-                        <span style="visibility:hidden;">c</span>
-                    </label>
-                </th>
+                <th class="checkbox-column"> Record Id </th>
                 <th>Melting</th>
                 <th class="text-center">Action</th>
             </tr>
@@ -18,13 +12,7 @@
             @for (var i = 0; i < 32; i++)
             {
                 <tr>
-                    <td>
-                        <label class="new-control new-checkbox checkbox-outline-primary m-auto">
-                            <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
-                            <span class="new-control-indicator"></span>
-                            <span style="visibility:hidden;">c</span>
-                        </label>
-                    </td>
+                    <td class="checkbox-column"> @i </td>
                     <td>18k</td>
                     <td class="text-center">
                         <ul class="table-controls d-flex align-items-center justify-content-center">

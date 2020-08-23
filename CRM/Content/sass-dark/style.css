@@ -1,7 +1,7 @@
 ﻿/* Scroll style for -webkit- engines */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px; }
+  width: 8px;
+  height: 8px; }
 
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
@@ -44,7 +44,7 @@
 
 .theme-datatable .addButton, .theme-datatable .deleteButton {
   padding: 9px;
-  background: #ffffff;
+  background: rgba(170, 174, 193, 0.2);
   border-radius: 5px;
   cursor: pointer;
   margin-right: 15px;
@@ -73,17 +73,6 @@
   color: #ec737b; }
 
 /*Datatable with custom button css end*/
-/*Basic Datatable Design start*/
-.basic-theme-datatable table {
-  border-collapse: collapse !important; }
-  .basic-theme-datatable table thead tr:first-child, .basic-theme-datatable table thead tr:last-child, .basic-theme-datatable table tbody tr:first-child, .basic-theme-datatable table tbody tr:last-child {
-    border-radius: 0px; }
-  .basic-theme-datatable table tbody tr {
-    border-bottom: 1px solid #e0e6ed; }
-    .basic-theme-datatable table tbody tr:hover {
-      border-top: 2px solid #e0e6ed; }
-
-/*Basic Datatable Design end*/
 /*Brand page design start*/
 .brandImg {
   height: 90px;
@@ -91,9 +80,6 @@
   .brandImg img {
     width: 100%;
     height: auto; }
-
-#product-table tbody tr:hover, #productList-table tbody tr:hover {
-  border-top: 3px solid #e0e6ed; }
 
 /*Brand page design end*/
 textarea {
@@ -110,7 +96,7 @@ textarea {
 
 /*Custom Bootstrap Select CSS Ends*/
 .smsCountDiv {
-  box-shadow: 0 4px 6px 0 rgba(85, 85, 85, 0.0901961), 0 1px 20px 0 rgba(0, 0, 0, 0.08), 0px 1px 11px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px 0 rgba(255, 255, 255, 0.0901961), 0 1px 20px 0 rgba(255, 255, 255, 0.08), 0px 1px 11px 0px rgba(255, 255, 255, 0.06);
   min-height: 70px;
   height: 70px;
   max-height: 70px; }
@@ -122,3 +108,12 @@ textarea {
   max-height: 250px;
   height: 175px;
   min-height: 175px; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+.selectCategoryDiv {
+  min-height: 300px;
+  max-height: 300px;
+  height: 300px;
+  overflow: auto; }

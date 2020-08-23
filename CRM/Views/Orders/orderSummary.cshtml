@@ -1,65 +1,88 @@
 ﻿
 @{
-    ViewBag.Title = "orderRejectList";
+    ViewBag.Title = "orderSummary";
 }
 
 <div class="page-header mt-4 py-0 px-3 col-12 widget">
     <div class="page-title my-3">
-        <h3>Order Reject List</h3>
+        <h3>Order Summary</h3>
     </div>
 </div>
 
 <div class="layout-top-spacing">
     <div class="widget-content widget-content-area mb-4">
-        <div class="table-responsive theme-datatable basic-theme-datatable mt-4">
-            <table id="rejectList-table" class="table table-hover">
-                <thead>
+        <div class="w-100 mb-3">
+            <a href="/Orders/order" class="shadow-none btn btn-danger btn-sm">Back</a>
+        </div>
+        <div class="w-100 mb-3 d-flex justify-content-between flex-wrap">
+            <div class="mb-3 mb-md-0">
+                <h6 class="font-weight-bold">From:</h6>
+                <div class="d-flex align-items-center">
+                    <h6 class="font-weight-bold mb-0">Name:&nbsp;</h6>
+                    <h6 class="mb-0">Demo User</h6>
+                </div>
+            </div>
+            <div>
+                <h6 class="font-weight-bold">Order Summary:</h6>
+                <div class="d-flex align-items-center">
+                    <h6 class="font-weight-bold mb-0">Order ID:&nbsp;</h6>
+                    <h6 class="mb-0">83</h6>
+                </div>
+                <div class="d-flex align-items-center">
+                    <h6 class="font-weight-bold mb-0">Order Date:&nbsp;</h6>
+                    <h6 class="mb-0">17-08-2020</h6>
+                </div>
+                <div class="d-flex align-items-center">
+                    <h6 class="font-weight-bold mb-0">Delivery Date:&nbsp;</h6>
+                    <h6 class="mb-0">17-08-2020</h6>
+                </div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table mb-4">
+                <thead class="border-top-0">
                     <tr>
-                        <th class="checkbox-column"> Record Id </th>
+                        <th class="text-center">#</th>
                         <th>Design Number</th>
                         <th>Quantity</th>
                         <th>Gross Wt.</th>
                         <th>Net Wt.</th>
-                        <th>Size</th>
                         <th>Length</th>
-                        <th>Color</th>
-                        <th>Weight</th>
+                        <th>Melting</th>
+                        <th>Size</th>
                         <th>Remarks</th>
-                        <th>Notes</th>
                         <th>Images</th>
-                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @for (var i = 0; i < 32; i++)
+                    @for (var i = 0; i < 5; i++)
                     {
                         <tr>
-                            <td class="checkbox-column"> @i </td>
-                            <td>CHOCO 007</td>
-                            <td>10</td>
-                            <td>25.000</td>
-                            <td>00.000</td>
-                            <td>NA</td>
+                            <td class="text-center">@i</td>
+                            <td>CHOCO 003</td>
+                            <td>@i</td>
+                            <td>85</td>
+                            <td>85</td>
                             <td>20</td>
-                            <td>Golden</td>
-                            <td>25.000</td>
+                            <td>22k</td>
+                            <td>24c</td>
                             <td>NA</td>
-                            <td>Testing Testing</td>
                             <td>
                                 <div class="brandImg cursor-pointer" data-toggle="modal" data-target=".brandImage">
                                     <img src="/Content/assets/img/90x90.jpg">
                                 </div>
                             </td>
-                            <td>
-                                <button class="btn btn-primary shadow-none btn-sm">Approved</button>
-                            </td>
                         </tr>
                     }
                 </tbody>
             </table>
+            <div class="w-100 text-right">
+                <button class="shadow-none btn btn-success btn-sm">Save</button>
+            </div>
         </div>
     </div>
 </div>
+
 
 <div class="modal fade brandImage" tabindex="-1" role="dialog" aria-labelledby="stateModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -79,7 +102,3 @@
         </div>
     </div>
 </div>
-
-@section scripts {
-    <script src="~/Script/orderRejectList.js"></script>
-}

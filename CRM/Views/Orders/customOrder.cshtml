@@ -15,13 +15,7 @@
             <table id="customizedOrder-table" class="table table-hover non-hover">
                 <thead>
                     <tr>
-                        <th>
-                            <label class="new-control new-checkbox checkbox-outline-primary m-auto">
-                                <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
-                                <span class="new-control-indicator"></span>
-                                <span style="visibility:hidden;">c</span>
-                            </label>
-                        </th>
+                        <th class="checkbox-column"> Record Id </th>
                         <th>Client Name</th>
                         <th>Order Date</th>
                         <th>Gross Wt.</th>
@@ -38,13 +32,7 @@
                     @for (var i = 0; i < 32; i++)
                     {
                         <tr>
-                            <td>
-                                <label class="new-control new-checkbox checkbox-outline-primary m-auto">
-                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="customer-all-info">
-                                    <span class="new-control-indicator"></span>
-                                    <span style="visibility:hidden;">c</span>
-                                </label>
-                            </td>
+                            <td class="checkbox-column"> @i </td>
                             <td>ajinkya</td>
                             <td>01-Aug-2020</td>
                             <td>25.000</td>
@@ -54,8 +42,8 @@
                             <td>Golden</td>
                             <td>Testing</td>
                             <td>
-                                <div class="brandImg">
-                                    <img src="~/Content/assets/img/90x90.jpg" />
+                                <div class="brandImg cursor-pointer" data-toggle="modal" data-target=".brandImage">
+                                    <img src="/Content/assets/img/90x90.jpg">
                                 </div>
                             </td>
                             <td>
@@ -64,8 +52,8 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
-                                        <a class="dropdown-item" href="javascript:void(0);">Assign Order</a>
-                                        <a class="dropdown-item" href="javascript:void(0);">Disapproved</a>
+                                        <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target=".assignOrder">Assign Order</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target=".disapprove" href="javascript:void(0);">Disapproved</a>
                                     </div>
                                 </div>
                             </td>
@@ -73,6 +61,119 @@
                     }
                 </tbody>
             </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade disapprove" tabindex="-1" role="dialog" aria-labelledby="stateModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="stateModalLabel">Disapprove</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 float-left">
+                        <div class="form-group float-left col-md-12 p-0 w-100 mb-3">
+                            <label for="address">Description</label>
+                            <textarea class="form-control" id="address" placeholder="Enter Address"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary saveButton">Save</button>
+                <button class="btn" data-dismiss="modal">Discard</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade brandImage" tabindex="-1" role="dialog" aria-labelledby="stateModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="stateModalLabel">Master Image</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="~/Content/assets/img/200x200.jpg">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger bg-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bd-example-modal-xl assignOrder" tabindex="-1" role="dialog" aria-labelledby="stateModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="stateModalLabel">Customized Order Products</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 float-left">
+                        <div class="form-group float-left col-md-12 col-lg-6 w-100 mb-3">
+                            <label for="name">Gross Weight</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter Worker Name">
+                        </div>
+                        <div class="form-group float-left col-md-12 col-lg-6 w-100 mb-3">
+                            <label for="mobile">Net Weight</label>
+                            <input type="text" class="form-control" id="mobile" placeholder="Mobile Number">
+                        </div>
+                        <div class="form-group float-left col-md-12 col-lg-6 w-100 mb-3">
+                            <label for="companyName">Size</label>
+                            <input type="text" class="form-control" id="companyName" placeholder="Enter Company Name">
+                        </div>
+                        <div class="form-group float-left col-md-12 col-lg-6 w-100 mb-3">
+                            <label for="email">Melting</label>
+                            <select class="selectpicker custom-bsSelect w-100" id="wrkStatus">
+                                <option>Select Melting</option>
+                                <option>Active</option>
+                                <option>Deactivate</option>
+                            </select>
+                        </div>
+                        <div class="form-group float-left col-md-12 col-lg-6 w-100 mb-3">
+                            <label for="password">Length</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                        </div>
+                        <div class="form-group float-left col-md-12 col-lg-6 w-100 mb-3">
+                            <label for="wrkStatus">Worker Name</label>
+                            <select class="selectpicker custom-bsSelect w-100" id="wrkStatus">
+                                <option>Select Worker</option>
+                                <option>Active</option>
+                                <option>Deactivate</option>
+                            </select>
+                        </div>
+                        <div class="form-group float-left col-md-12 col-lg-6 w-100 mb-3">
+                            <label for="wrkStatus">Assign Product</label>
+                            <select class="selectpicker custom-bsSelect w-100" id="wrkStatus">
+                                <option>Select Worker</option>
+                                <option>Active</option>
+                                <option>Deactivate</option>
+                            </select>
+                        </div>
+                        <div class="form-group float-left col-md-12 col-lg-6 w-100 mb-3">
+                            <label for="address">Remarks</label>
+                            <textarea class="form-control" id="address" placeholder="Enter Address"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary saveButton">Save</button>
+                <button class="btn" data-dismiss="modal">Discard</button>
+            </div>
         </div>
     </div>
 </div>

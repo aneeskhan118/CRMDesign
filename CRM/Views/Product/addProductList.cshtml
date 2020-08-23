@@ -9,7 +9,7 @@
     </div>
 </div>
 
-<div class="account-settings-container layout-top-spacing">
+<div class="account-settings-container layout-top-spacing mb-4">
     <div class="account-content">
         <div class="scrollspy-example" data-spy="scroll" data-target="#account-settings-scroll" data-offset="-100">
             <div class="row">
@@ -25,6 +25,11 @@
                                     <div class="row">
                                         <div class="col-md-11 mx-auto">
                                             <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <div class="btn btn-sm btn-primary shadow-none" data-toggle="modal" data-target="#selectCategory">Select Category</div>
+                                                    </div>
+                                                </div>
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label for="skuCode">Collection SKU Code</label>
@@ -132,3 +137,65 @@
     </div>
 </div>
 
+<div class="modal fade bd-example-modal-xl" id="selectCategory" tabindex="-1" role="dialog" aria-labelledby="stateModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="stateModalLabel">Select Category</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 float-left">
+                        <div class="form-group float-left col-md-12 col-lg-6 w-100 mb-3">
+                            <h6 class="font-weight-bold">Select Category</h6>
+                            <div class="float-left w-100 p-3 selectCategoryDiv border">
+                                <ul class="file-tree">
+                                    <li class="file-tree-folder">
+                                        Title
+                                        <ul>
+                                            <li>File Name</li>
+                                        </ul>
+                                    </li>
+                                    <li class="file-tree-folder">
+                                        Title 1
+                                        <ul>
+                                            <li class="file-tree-folder">
+                                                Title 2
+                                                <ul>
+                                                    <li>file name </li>
+                                                    <li>file name </li>
+                                                    <li>file name </li>
+                                                </ul>
+                                            </li>
+                                            <li class="file-tree-folder">
+                                                Title 3
+                                                <ul>
+                                                    <li>file name </li>
+                                                    <li>file name </li>
+                                                    <li>file name </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group float-left col-md-12 col-lg-6 w-100 mb-3">
+                            <h6 class="font-weight-bold">Selected Category</h6>
+                            <div class="float-left w-100 p-3 selectCategoryDiv border">
+                                ....
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary saveButton">Save</button>
+                <button class="btn" data-dismiss="modal">Discard</button>
+            </div>
+        </div>
+    </div>
+</div>

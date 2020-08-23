@@ -122,3 +122,15 @@ textarea {
   max-height: 250px;
   height: 175px;
   min-height: 175px; }
+
+.cursor-pointer {
+  cursor: pointer; }
+
+.allUser {
+  color: #000; }
+
+.selectCategoryDiv {
+  min-height: 300px;
+  max-height: 300px;
+  height: 300px;
+  overflow: auto; }

@@ -1,31 +1,29 @@
 ﻿
 @{
-    ViewBag.Title = "customOrderRejectList";
+    ViewBag.Title = "addCollection";
 }
 
 <div class="page-header mt-4 py-0 px-3 col-12 widget">
     <div class="page-title my-3">
-        <h3>Customized Order Reject List</h3>
+        <h3>Collections</h3>
     </div>
 </div>
 
 <div class="layout-top-spacing">
     <div class="widget-content widget-content-area mb-4">
+        <div class="w-100">
+            <a href="/Product/myCollection" class="shadow-none btn btn-danger btn-sm">Back</a>
+        </div>
         <div class="table-responsive theme-datatable basic-theme-datatable mt-4">
-            <table id="customizedOrderReject-table" class="table table-hover">
+            <table id="addCollection-table" class="table table-hover">
                 <thead>
                     <tr>
                         <th class="checkbox-column"> Record Id </th>
-                        <th>Client Name</th>
-                        <th>Order Date</th>
-                        <th>Gross Wt.</th>
-                        <th>Melting</th>
-                        <th>Size</th>
-                        <th>Delivery Date</th>
-                        <th>Remarks</th>
-                        <th>Notes</th>
-                        <th>Images</th>
-                        <th>Action</th>
+                        <th>SKU Code</th>
+                        <th>Gross Weight</th>
+                        <th>Net Weight</th>
+                        <th>Quantity</th>
+                        <th>Image</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -33,21 +31,14 @@
                     {
                         <tr>
                             <td class="checkbox-column"> @i </td>
-                            <td>ajinkya</td>
-                            <td>01-Aug-2020</td>
-                            <td>25.000</td>
-                            <td>18</td>
-                            <td>NA</td>
-                            <td>01-Aug-2020</td>
-                            <td>Golden</td>
-                            <td>Testing</td>
+                            <td>CHOCO 011</td>
+                            <td>284.000</td>
+                            <td>0.000</td>
+                            <td>4</td>
                             <td>
                                 <div class="brandImg cursor-pointer" data-toggle="modal" data-target=".brandImage">
                                     <img src="/Content/assets/img/90x90.jpg">
                                 </div>
-                            </td>
-                            <td>
-                                <button class="btn btn-primary shadow-none btn-sm">Approved</button>
                             </td>
                         </tr>
                     }
@@ -77,5 +68,6 @@
 </div>
 
 @section scripts {
-    <script src="~/Script/customOrderRejectList.js"></script>
+    <script src="~/Script/addCollection.js"></script>
 }
+

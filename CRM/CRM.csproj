@@ -1606,6 +1606,7 @@
     <Content Include="Content\sass\plugins\table\datatable\dt-global_style.scss" />
     <Content Include="Content\sass\plugins\tagInput\tags-input.scss" />
     <Content Include="Script\accessPremission.js" />
+    <Content Include="Script\addCollection.js" />
     <Content Include="Script\addUserGroup.js" />
     <Content Include="Script\brandBanner.js" />
     <Content Include="Script\bulkImage.js" />
@@ -1851,6 +1852,8 @@
     <Content Include="Views\Notification\_audienceSMS.cshtml" />
     <Content Include="Views\Orders\cartList.cshtml" />
     <Content Include="Views\Shared\_LayoutDark.cshtml" />
+    <Content Include="Views\Orders\orderSummary.cshtml" />
+    <Content Include="Views\Product\addCollection.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
