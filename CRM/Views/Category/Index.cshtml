@@ -38,7 +38,7 @@
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
                                         <a class="dropdown-item" href="javascript:void(0);">Edit</a>
                                         <a class="dropdown-item" href="javascript:void(0);">View Sub-Category</a>
-                                        <a class="dropdown-item" href="javascript:void(0);">Merge Category</a>
+                                        <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#mergeModal">Merge Category</a>
                                         <a class="dropdown-item" href="javascript:void(0);">Download Products</a>
                                         <a class="dropdown-item" href="javascript:void(0);">Delete Category</a>
                                     </div>
@@ -52,11 +52,43 @@
     </div>
 </div>
 
+<div class="modal fade" id="mergeModal" tabindex="-1" role="dialog" aria-labelledby="stateModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="stateModalLabel">Merge</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 float-left">
+                        <div class="form-group float-left w-100 mb-3">
+                            <label for="userType">Merge</label>
+                            <select class="selectpicker custom-bsSelect w-100" id="userType">
+                                <option>Select Merge Type</option>
+                                <option>Admin</option>
+                                <option>Client</option>
+                                <option>Users</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary saveButton">Save</button>
+                <button class="btn" data-dismiss="modal">Discard</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="stateModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="stateModalLabel">Add Brand Banner</h5>
+                <h5 class="modal-title" id="stateModalLabel">Add Category</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                 </button>

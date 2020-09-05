@@ -175,3 +175,23 @@ textarea {
     height: 300px;
     overflow: auto;
 }
+
+table {
+    thead, tbody {
+        tr.active {
+            display: table-row;
+        }
+    }
+}
+
+.categorySelectedItem {
+    background: #EBEBEB;
+    border-radius: 30px;
+    min-width: 140px;
+}
+
+.tbl-div {
+    table.dataTable {
+        margin: 0 !important;
+    }
+}

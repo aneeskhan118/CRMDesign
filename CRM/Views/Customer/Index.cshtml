@@ -13,7 +13,7 @@
     <div class="col-xl-12 col-lg-12 col-sm-12 layout-spacing">
         <div class="br-6 mb-4">
             <div class="table-responsive theme-datatable mt-4">
-                <table id="default-ordering" class="table table-hover">
+                <table id="default-ordering" class="table table-hover non-hover">
                     <thead>
                         <tr>
                             <th class="checkbox-column"> Record Id </th>
@@ -38,14 +38,22 @@
                                 <td>saurav.srivastava27@outlook.com</td>
                                 <td>Admin</td>
                                 <td>Active</td>
-                                <td>32</td>
+                                <td>
+                                    <a href="/Orders/cartList">32</a>
+                                </td>
                                 <td>Not Assigned</td>
                                 <td class="text-center"><span class="shadow-none badge badge-primary">Read</span></td>
                                 <td class="text-center">
-                                    <ul class="table-controls d-flex align-items-center justify-content-center">
-                                        <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
-                                        <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
-                                    </ul>
+                                    <div class="dropdown custom-dropdown">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                            <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                            <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#assignModal">Assign Category</a>
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -61,19 +69,86 @@
                                 <td>saurav.srivastava27@outlook.com</td>
                                 <td>Admin</td>
                                 <td>Active</td>
-                                <td>32</td>
+                                <td>
+                                    <a href="/Orders/cartList">32</a>
+                                </td>
                                 <td>Not Assigned</td>
                                 <td class="text-center"><span class="shadow-none badge badge-danger">Unread</span></td>
                                 <td class="text-center">
-                                    <ul class="table-controls d-flex align-items-center justify-content-center">
-                                        <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Edit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-2 p-1 br-6 mb-1"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg></a></li>
-                                        <li><a href="javascript:void(0);" class="bs-tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="Delete"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash p-1 br-6 mb-1"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg></a></li>
-                                    </ul>
+                                    <div class="dropdown custom-dropdown">
+                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-horizontal"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                                            <a class="dropdown-item" href="javascript:void(0);">Edit</a>
+                                            <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                                            <a class="dropdown-item" href="javascript:void(0);" data-toggle="modal" data-target="#assignModal">Assign Category</a>
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                         }
                     </tbody>
                 </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade bd-example-modal-xl" id="assignModal" tabindex="-1" role="dialog" aria-labelledby="stateModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="stateModalLabel">Assign Category</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-12 float-left">
+                        <div class="form-group float-left col-12 w-100 mb-3 p-0">
+                            <label>Selected Category</label>
+                            <div class="p-2 border br-4">
+                                <div class="categorySelectedItem d-inline-flex align-items-center justify-content-between p-3">
+                                    <span>Category 1</span>
+                                    <span class="cursor-pointer">X</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="float-left w-100 p-0 d-flex align-items-center flex-wrap p-0">
+                            <div class="form-group float-left col-12 p-0 w-100 mb-3">
+                                <input type="text" class="form-control" id="cate" placeholder="Search Categories">
+                            </div>
+                        </div>
+                        <label>Select Category</label>
+                        <div class="col-12 border p-0 float-left">
+                            <div class="form-group float-left col-12 border-bottom d-flex align-items-center justify-content-between px-3 py-2 w-100 mb-3">
+                                <label id="all-user" class="new-control new-checkbox checkbox-outline-primary">
+                                    <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="all-user">
+                                    <span class="new-control-indicator"></span>
+                                    <span class="ml-3 allUser">Select All Category</span>
+                                </label>
+
+                                <label class="mb-0">23 categories selected</label>
+                            </div>
+                            @for (var i = 1; i < 34; i++)
+                            {
+                                <div class="form-group float-left col-12 col-sm-4 w-100 mb-3">
+                                    <label id="all-user" class="new-control new-checkbox checkbox-outline-primary">
+                                        <input type="checkbox" class="new-control-input chk-parent select-customers-info" id="all-user">
+                                        <span class="new-control-indicator"></span>
+                                        <span class="ml-3 allUser">Category @i</span>
+                                    </label>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary saveButton">Save</button>
+                <button class="btn" data-dismiss="modal">Discard</button>
             </div>
         </div>
     </div>
