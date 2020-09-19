@@ -16,7 +16,7 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 layout-spacing">
                     <form id="general-info" class="section general-info">
                         <div class="w-100 info pb-0">
-                            <a href="/Product/productList"  class="shadow-none btn btn-danger btn-sm">Back</a>
+                            <a href="/Product/productList" class="shadow-none btn btn-danger btn-sm">Back</a>
                         </div>
                         <div class="info">
                             <h6 class="">Add Product Information</h6>
@@ -127,13 +127,77 @@
         <div class="as-footer-container">
 
             <button id="multiple-reset" class="btn btn-warning">Reset All</button>
-            <div class="blockui-growl-message">
-                <i class="flaticon-double-check"></i>&nbsp; Settings Saved Successfully
-            </div>
-            <button id="multiple-messages" class="btn btn-primary">Save Changes</button>
+            @*<div class="blockui-growl-message">
+                    <i class="flaticon-double-check"></i>&nbsp; Settings Saved Successfully
+                </div>*@
+            <button id="multiple-messages" class="btn btn-primary" data-toggle="modal" data-target="#addBulkImages">Save Changes</button>
 
         </div>
 
+    </div>
+</div>
+
+<div class="modal fade bd-example-modal-xl" id="addBulkImages" tabindex="-1" role="dialog" aria-labelledby="stateModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="stateModalLabel">Select Category</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div id="fuMultipleFile" class="col-12 float-left">
+                        <div class="float-left mb-3 w-100">
+                            <div class="widget-header mb-3">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h5>Bulk Upload</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3 border">
+                                <div class="custom-file-container" data-upload-id="mySecondImage">
+                                    <label class="float-right"><a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">Clear All</a></label>
+                                    <label class="custom-file-container__custom-file">
+                                        <input type="file" class="custom-file-container__custom-file__custom-file-input" multiple>
+                                        <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
+                                        <span class="custom-file-container__custom-file__custom-file-control"></span>
+                                    </label>
+                                    <div class="custom-file-container__image-preview"></div>
+                                </div>
+                            </div>
+                            <div class="text-center mt-3">
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                        <div class="float-left w-100">
+                            <div class="col-12 mb-3 float-left">
+                                <h5>Uploaded Images</h5>
+                            </div>
+                            <div class="col-12 float-left">
+                                @for (var i = 0; i < 5; i++)
+                                {
+                                    <div class="float-left col-12 col-sm-12 col-md-4 d-flex align-items-center flex-column justify-content-center mb-3">
+                                        <img src="~/Content/assets/img/300x300.jpg" class="mb-3 float-left" />
+
+                                        <div class="d-flex align-items-center justify-content-between col-12 float-left px-2">
+                                            <button class="btn btn-danger">Delete</button>
+                                            <button class="btn btn-success m-0">Featured</button>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary saveButton">Save</button>
+                <button class="btn" data-dismiss="modal">Discard</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -199,3 +263,7 @@
         </div>
     </div>
 </div>
+
+@section scripts {
+    <script src="~/Script/bulkImage.js"></script>
+}
