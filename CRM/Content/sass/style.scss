@@ -171,6 +171,7 @@ textarea {
         }
 
         .dropdown-menu {
+            box-shadow: 0px 3px 10px 4px rgba(0, 0, 0, 0.25);
             .dropdown-item {
                 &:not(:last-child) {
                     border-bottom: 1px solid #acb0c3;
@@ -234,4 +235,11 @@ table {
     table.dataTable {
         margin: 0 !important;
     }
+}
+
+.dataTables_wrapper {
+    &.container-fluid {
+        padding-left: 0px;
+        padding-right: 0px;
+     }
 }

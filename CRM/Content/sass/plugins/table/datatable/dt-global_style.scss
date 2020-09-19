@@ -79,37 +79,37 @@ table.dataTable {
 }
 
 .table > {
-  tbody {
-    &:before {
-      line-height: 1em;
-      content: "_";
-      color: white;
-      display: block;
+    tbody {
+        &:before {
+            line-height: 1em;
+            content: "_";
+            color: white;
+            display: block;
+        }
+
+        tr {
+            border-radius: 4px;
+            -webkit-transition: all 0.1s ease;
+            transition: all 0.1s ease;
+            border-bottom: 1px solid $m-color_3;
+        }
     }
 
-    tr {
-      border-radius: 4px;
-      -webkit-transition: all 0.1s ease;
-      transition: all 0.1s ease;
-      border-bottom: 1px solid $m-color_3;
+    thead > tr > th {
+        color: $primary;
+        font-weight: 700;
+        font-size: 13px;
+        border: none;
+        letter-spacing: 1px;
+        text-transform: uppercase;
     }
-  }
 
-  thead > tr > th {
-    color: $primary;
-    font-weight: 700;
-    font-size: 13px;
-    border: none;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-
-  tbody > tr > td {
-    border: none;
-    color: $m-color_6;
-    font-size: 13px;
-    letter-spacing: 1px;
-  }
+    tbody > tr > td {
+        border: none;
+        color: #464b60;
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
 }
 
 .table-striped tbody tr:nth-of-type(odd) {

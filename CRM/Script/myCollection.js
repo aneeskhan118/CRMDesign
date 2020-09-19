@@ -18,7 +18,7 @@
     "stripeClasses": [],
     "lengthMenu": [5, 10, 20, 50],
     "pageLength": 10,
-    "sDom": 'rlf<"w-100 float-left overflow-auto p-0 mb-4 tbl-div"t>ip',
+    "sDom": 'rlf<"w-100 overflow-auto p-0 mb-4 tbl-div"t>ip',
     drawCallback: function () { $('.dataTables_paginate > .pagination').addClass(' pagination-style-13 pagination-bordered mb-5'); }
 });
 
